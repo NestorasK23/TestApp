@@ -2,6 +2,18 @@ import React from 'react';
 import { Button } from './ui/button';
 import ServiceCard from './ServiceCard';
 import { ArrowLeft } from 'lucide-react';
+import {
+  MedicalServices,
+  LocalHospital,
+  DirectionsCar,
+  CreditCard,
+  Gavel,
+  FireExtinguisher,
+  Pets,
+  Public,
+  Mood,
+  Sailing
+} from '@mui/icons-material';
 
 const ServiceList = ({ 
   category, 
@@ -11,7 +23,24 @@ const ServiceList = ({
   onBack,
   categoryName 
 }) => {
-  const IconComponent = categoryName.icon;
+  // Icon mapping
+  const getIconComponent = (iconName) => {
+    const iconMap = {
+      medical_services: MedicalServices,
+      local_hospital: LocalHospital,
+      directions_car: DirectionsCar,
+      credit_card: CreditCard,
+      gavel: Gavel,
+      fire_extinguisher: FireExtinguisher,
+      pets: Pets,
+      public: Public,
+      mood: Mood,
+      sailing: Sailing
+    };
+    return iconMap[iconName] || MedicalServices;
+  };
+
+  const IconComponent = getIconComponent(categoryName.icon);
   
   return (
     <div className="space-y-4">
