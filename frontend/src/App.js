@@ -65,20 +65,7 @@ function App() {
       {/* Sticky Category Bar - Always Visible */}
       <div className="sticky top-0 z-40 bg-white shadow-md border-b-2 border-blue-100" ref={categoryGridRef}>
         <div className="container mx-auto px-4 py-6 max-w-6xl">
-          {selectedCategory ? (
-            <div className="text-center mb-6">
-              <div className="flex items-center justify-center space-x-4">
-                <Button
-                  variant="ghost"
-                  onClick={handleBackToCategories}
-                  className="flex items-center space-x-2 text-blue-700 hover:text-blue-800 hover:bg-blue-50"
-                >
-                  <ArrowLeft className="h-5 w-5" />
-                  <span>{currentTranslations.backToCategories}</span>
-                </Button>
-              </div>
-            </div>
-          ) : (
+          {!selectedCategory && (
             <div className="text-center mb-6">
               <h2 className="text-2xl lg:text-3xl font-bold text-gray-800">
                 {currentTranslations.selectCategory}
