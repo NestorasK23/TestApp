@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
+  <!-- S-shaped logo -->
+  <path d="M20 20 C20 10, 30 10, 40 20 L60 40 C70 50, 80 50, 90 40 L90 60 C90 70, 80 70, 70 60 L50 40 C40 30, 30 30, 20 40 Z" 
+        fill="#4A90E2" stroke="#4A90E2" stroke-width="2"/>
+  
+  <!-- HelpHere text -->
+  <text x="110" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">HelpHere</text>
+  <text x="110" y="55" font-family="Arial, sans-serif" font-size="12" fill="#666">Find emergency services in Corfu</text>
+</svg>
