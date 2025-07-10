@@ -59,8 +59,8 @@ function App() {
         onLanguageChange={handleLanguageChange}
       />
       
-      {/* Sticky Category Bar - Always Visible */}
-      <div className="sticky top-0 z-40 bg-white shadow-md border-b-2 border-blue-100" ref={categoryGridRef}>
+      {/* Category Bar */}
+      <div className="bg-white shadow-md border-b-2 border-blue-100" ref={categoryGridRef}>
         <div className="container mx-auto px-4 py-6 max-w-6xl">
           {!selectedCategory && (
             <div className="text-center mb-6">
