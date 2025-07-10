@@ -46,12 +46,6 @@ const Header = ({ language, onLanguageChange }) => {
             />
             <div>
               <span className="text-xl font-bold text-gray-900">HelpHere</span>
-              <p className="text-sm text-gray-600 hidden lg:block">
-                {language === 'en' 
-                  ? 'Emergency Help for Tourists in Corfu'
-                  : 'Βοήθεια Έκτακτης Ανάγκης για Τουρίστες στην Κέρκυρα'
-                }
-              </p>
             </div>
           </div>
 
