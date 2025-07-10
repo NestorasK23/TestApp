@@ -53,13 +53,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white" style={{ scrollBehavior: 'smooth' }}>
-      <LanguageToggle 
-        currentLanguage={language} 
-        onLanguageChange={handleLanguageChange} 
-      />
-      
       {/* Main Header */}
-      <Header language={language} />
+      <Header 
+        language={language} 
+        onLanguageChange={handleLanguageChange}
+      />
       
       {/* Sticky Category Bar - Always Visible */}
       <div className="sticky top-0 z-40 bg-white shadow-md border-b-2 border-blue-100" ref={categoryGridRef}>
