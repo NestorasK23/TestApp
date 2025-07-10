@@ -44,9 +44,6 @@ const Header = ({ language, onLanguageChange }) => {
               alt="HelpHere Logo" 
               className="h-12 lg:h-14 w-auto"
             />
-            <div>
-              <span className="text-xl font-bold text-gray-900">HelpHere</span>
-            </div>
           </div>
 
           {/* Desktop Navigation and Language Switcher */}
