@@ -54,10 +54,9 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
         </h2>
       </div>
       
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
         {categories.map(([key, category]) => {
           const iconName = category.en.icon; // Get icon from the language object
-          console.log('Category:', key, 'Icon:', iconName); // Debug log
           const IconComponent = getIconComponent(iconName);
           
           const getCategoryCardColor = (categoryKey) => {
@@ -100,13 +99,13 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
             switch (categoryKey) {
               case 'pharmacy': return 'text-green-800';
               case 'doctor': return 'text-blue-800';
-              case 'pediatrician': return 'text-sky-800';
+              case 'pediatrician': return 'text-cyan-800';
               case 'hospital': return 'text-indigo-800';
               case 'dentist': return 'text-amber-800';
               case 'roadside': return 'text-yellow-800';
-              case 'police': return 'text-red-800';
-              case 'fire': return 'text-orange-800';
-              case 'boat': return 'text-pink-800';
+              case 'police': return 'text-blue-800';
+              case 'fire': return 'text-pink-800';
+              case 'boat': return 'text-blue-800';
               case 'atm': return 'text-gray-800';
               case 'veterinary': return 'text-emerald-800';
               case 'embassy': return 'text-purple-800';
@@ -121,11 +120,11 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
               style={{ backgroundColor: getCategoryBackgroundColor(key) }}
               onClick={() => onCategorySelect(key)}
             >
-              <CardContent className="p-4 text-center">
+              <CardContent className="p-3 lg:p-4 text-center">
                 <div className={`${getCategoryIconColor(key)} mb-2 group-hover:scale-110 transition-transform duration-200 flex justify-center`}>
-                  <IconComponent sx={{ fontSize: 28 }} />
+                  <IconComponent sx={{ fontSize: { xs: 20, sm: 24, lg: 28 } }} />
                 </div>
-                <h3 className="font-bold text-gray-800 text-sm leading-tight group-hover:text-gray-900 transition-colors duration-200">
+                <h3 className="font-bold text-gray-800 text-xs lg:text-sm leading-tight group-hover:text-gray-900 transition-colors duration-200">
                   {category[language].name}
                 </h3>
               </CardContent>
@@ -134,7 +133,7 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
         })}
       </div>
       
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+      <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-center mt-4">
         <p className="text-blue-800 text-sm font-medium">
           💡 {language === 'en' ? 'Tap any category to find nearby services' : 'Πατήστε οποιαδήποτε κατηγορία για να βρείτε κοντινές υπηρεσίες'}
         </p>
