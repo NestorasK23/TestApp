@@ -52,7 +52,7 @@ function App() {
             <img 
               src="/logo.svg" 
               alt="HelpHere Logo" 
-              className="h-10 w-auto max-w-full object-contain"
+              className="h-8 w-auto max-w-full object-contain"
             />
           </div>
           <p className="text-gray-600 text-sm">
