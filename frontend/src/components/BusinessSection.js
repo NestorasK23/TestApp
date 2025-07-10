@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
-import { Button } from './ui/button';
-import { Building2, Plus } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 
 const BusinessSection = ({ language }) => {
   return (
@@ -19,36 +18,40 @@ const BusinessSection = ({ language }) => {
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
               {language === 'en'
-                ? 'Join our network of trusted healthcare providers and help tourists find your services when they need them most.'
-                : 'Ενταχθείτε στο δίκτυό μας αξιόπιστων παρόχων υγειονομικής περίθαλψης και βοηθήστε τους τουρίστες να βρουν τις υπηρεσίες σας όταν τις χρειάζονται περισσότερο.'
+                ? 'We help tourists find trusted healthcare providers across Corfu. All listings are manually verified to ensure quality and accuracy.'
+                : 'Βοηθάμε τους τουρίστες να βρουν αξιόπιστους παρόχους υγειονομικής περίθαλψης σε όλη την Κέρκυρα. Όλες οι καταχωρήσεις επαληθεύονται χειροκίνητα για ποιότητα και ακρίβεια.'
               }
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-3xl mb-2">🌟</div>
                 <h4 className="font-semibold text-gray-800">
-                  {language === 'en' ? 'Free Listing' : 'Δωρεάν Καταχώρηση'}
+                  {language === 'en' ? 'Verified Listings' : 'Επαληθευμένες Καταχωρήσεις'}
                 </h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  {language === 'en' ? 'Quality controlled' : 'Ελεγχόμενη ποιότητα'}
+                </p>
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">👥</div>
                 <h4 className="font-semibold text-gray-800">
-                  {language === 'en' ? 'More Customers' : 'Περισσότεροι Πελάτες'}
+                  {language === 'en' ? 'Tourist Focused' : 'Εστίαση στους Τουρίστες'}
                 </h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  {language === 'en' ? 'Emergency ready' : 'Έτοιμοι για έκτακτες ανάγκες'}
+                </p>
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">📱</div>
                 <h4 className="font-semibold text-gray-800">
-                  {language === 'en' ? 'Easy Management' : 'Εύκολη Διαχείριση'}
+                  {language === 'en' ? 'Easy Access' : 'Εύκολη Πρόσβαση'}
                 </h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  {language === 'en' ? 'One-tap contact' : 'Επικοινωνία με ένα άγγιγμα'}
+                </p>
               </div>
             </div>
-            
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200">
-              <Plus className="mr-2 h-5 w-5" />
-              {language === 'en' ? 'List Your Business for Free' : 'Καταχωρήστε την Επιχείρησή σας Δωρεάν'}
-            </Button>
           </CardContent>
         </Card>
       </div>
