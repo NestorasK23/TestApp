@@ -15,7 +15,9 @@ import {
   MedicalInformation,
   ChildCare,
   Psychology,
-  Flag
+  Flag,
+  SentimentVerySatisfied,
+  Security
 } from '@mui/icons-material';
 
 const CategoryGrid = ({ language, onCategorySelect, translations }) => {
