@@ -17,7 +17,7 @@ import {
 const CategoryGrid = ({ language, onCategorySelect, translations }) => {
   const categories = Object.entries(serviceCategories);
 
-  // Icon mapping
+  // Icon mapping with correct Material Icons
   const getIconComponent = (iconName) => {
     const iconMap = {
       medical_services: MedicalServices,
@@ -31,7 +31,7 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
       mood: Mood,
       sailing: Sailing
     };
-    return iconMap[iconName] || MedicalServices;
+    return iconMap[iconName] || LocalHospital; // Default fallback
   };
 
   return (
