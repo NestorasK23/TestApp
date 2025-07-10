@@ -46,6 +46,7 @@ const ServiceList = ({
               service={service}
               language={language}
               translations={translations}
+              category={category}
             />
           ))}
         </div>
