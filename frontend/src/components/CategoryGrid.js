@@ -62,19 +62,37 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
           
           const getCategoryCardColor = (categoryKey) => {
             switch (categoryKey) {
-              case 'pharmacy': return 'from-green-200 to-green-300 border-green-400 hover:border-green-500';
-              case 'doctor': return 'from-blue-200 to-blue-300 border-blue-400 hover:border-blue-500';
-              case 'pediatrician': return 'from-sky-200 to-sky-300 border-sky-400 hover:border-sky-500';
-              case 'hospital': return 'from-indigo-200 to-indigo-300 border-indigo-400 hover:border-indigo-500';
-              case 'dentist': return 'from-amber-200 to-amber-300 border-amber-400 hover:border-amber-500';
-              case 'roadside': return 'from-yellow-200 to-yellow-300 border-yellow-400 hover:border-yellow-500';
-              case 'police': return 'from-red-200 to-red-300 border-red-400 hover:border-red-500';
-              case 'fire': return 'from-orange-200 to-orange-300 border-orange-400 hover:border-orange-500';
-              case 'boat': return 'from-pink-200 to-pink-300 border-pink-400 hover:border-pink-500';
-              case 'atm': return 'from-gray-200 to-gray-300 border-gray-400 hover:border-gray-500';
-              case 'veterinary': return 'from-emerald-200 to-emerald-300 border-emerald-400 hover:border-emerald-500';
-              case 'embassy': return 'from-purple-200 to-purple-300 border-purple-400 hover:border-purple-500';
-              default: return 'from-blue-200 to-blue-300 border-blue-400 hover:border-blue-500';
+              case 'pharmacy': return 'border-green-400 hover:border-green-500';
+              case 'doctor': return 'border-blue-400 hover:border-blue-500';
+              case 'pediatrician': return 'border-cyan-400 hover:border-cyan-500';
+              case 'hospital': return 'border-indigo-400 hover:border-indigo-500';
+              case 'dentist': return 'border-orange-400 hover:border-orange-500';
+              case 'roadside': return 'border-yellow-400 hover:border-yellow-500';
+              case 'police': return 'border-blue-300 hover:border-blue-400';
+              case 'fire': return 'border-pink-400 hover:border-pink-500';
+              case 'boat': return 'border-blue-200 hover:border-blue-300';
+              case 'atm': return 'border-gray-400 hover:border-gray-500';
+              case 'veterinary': return 'border-green-300 hover:border-green-400';
+              case 'embassy': return 'border-purple-400 hover:border-purple-500';
+              default: return 'border-blue-400 hover:border-blue-500';
+            }
+          };
+
+          const getCategoryBackgroundColor = (categoryKey) => {
+            switch (categoryKey) {
+              case 'pharmacy': return '#D0F0C0';
+              case 'doctor': return '#D6EAF8';
+              case 'pediatrician': return '#B2EBF2';
+              case 'hospital': return '#C5CAE9';
+              case 'dentist': return '#FFE0B2';
+              case 'roadside': return '#FFF9C4';
+              case 'police': return '#BBDEFB';
+              case 'fire': return '#F8BBD0';
+              case 'boat': return '#E3F2FD';
+              case 'atm': return '#ECEFF1';
+              case 'veterinary': return '#A5D6A7';
+              case 'embassy': return '#E1BEE7';
+              default: return '#D6EAF8';
             }
           };
 
