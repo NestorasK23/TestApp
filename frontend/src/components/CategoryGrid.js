@@ -44,9 +44,9 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
       
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {categories.map(([key, category]) => {
+          console.log('Category:', key, 'Icon:', category.icon); // Debug log
           const IconComponent = getIconComponent(category.icon);
           
-          // Get category-specific colors with STRONG visual diversity
           const getCategoryCardColor = (categoryKey) => {
             switch (categoryKey) {
               case 'pharmacy': return 'from-green-200 to-green-300 border-green-400 hover:border-green-500';
@@ -91,7 +91,7 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
             >
               <CardContent className="p-4 text-center">
                 <div className={`${getCategoryIconColor(key)} mb-2 group-hover:scale-110 transition-transform duration-200 flex justify-center`}>
-                  <IconComponent className="h-7 w-7" />
+                  <IconComponent sx={{ fontSize: 28 }} />
                 </div>
                 <h3 className="font-bold text-gray-800 text-sm leading-tight group-hover:text-gray-900 transition-colors duration-200">
                   {category[language].name}
