@@ -1,52 +1,65 @@
 // Mock data for HelpHere services in Corfu
+import {
+  MedicalServices,
+  LocalHospital,
+  DirectionsCar,
+  CreditCard,
+  Gavel,
+  FireExtinguisher,
+  Pets,
+  Public,
+  Mood,
+  Sailing
+} from '@mui/icons-material';
+
 export const serviceCategories = {
   pharmacy: {
-    en: { name: "Pharmacies", icon: "💊" },
-    gr: { name: "Φαρμακεία", icon: "💊" }
+    en: { name: "Pharmacies", icon: MedicalServices },
+    gr: { name: "Φαρμακεία", icon: MedicalServices }
   },
   doctor: {
-    en: { name: "Doctors", icon: "👩‍⚕️" },
-    gr: { name: "Γιατροί", icon: "👩‍⚕️" }
+    en: { name: "Doctors", icon: LocalHospital },
+    gr: { name: "Γιατροί", icon: LocalHospital }
   },
   dentist: {
-    en: { name: "Dentists", icon: "🦷" },
-    gr: { name: "Οδοντίατροι", icon: "🦷" }
+    en: { name: "Dentists", icon: Mood },
+    gr: { name: "Οδοντίατροι", icon: Mood }
   },
   pediatrician: {
-    en: { name: "Pediatricians", icon: "👶" },
-    gr: { name: "Παιδίατροι", icon: "👶" }
+    en: { name: "Pediatricians", icon: LocalHospital },
+    gr: { name: "Παιδίατροι", icon: LocalHospital }
   },
   veterinary: {
-    en: { name: "Veterinary Clinics", icon: "🐾" },
-    gr: { name: "Κτηνιατρικές Κλινικές", icon: "🐾" }
+    en: { name: "Veterinary Clinics", icon: Pets },
+    gr: { name: "Κτηνιατρικές Κλινικές", icon: Pets }
   },
   roadside: {
-    en: { name: "Roadside Assistance", icon: "🚗" },
-    gr: { name: "Οδική Βοήθεια", icon: "🚗" }
+    en: { name: "Roadside Assistance", icon: DirectionsCar },
+    gr: { name: "Οδική Βοήθεια", icon: DirectionsCar }
   },
   atm: {
-    en: { name: "ATMs", icon: "🏧" },
-    gr: { name: "ΑΤΜ", icon: "🏧" }
+    en: { name: "ATMs", icon: CreditCard },
+    gr: { name: "ΑΤΜ", icon: CreditCard }
   },
   hospital: {
-    en: { name: "Hospitals", icon: "🏥" },
-    gr: { name: "Νοσοκομεία", icon: "🏥" }
+    en: { name: "Hospitals", icon: LocalHospital },
+    gr: { name: "Νοσοκομεία", icon: LocalHospital }
   },
   fire: {
-    en: { name: "Fire Department", icon: "🚒" },
-    gr: { name: "Πυροσβεστική", icon: "🚒" }
+    en: { name: "Fire Department", icon: FireExtinguisher },
+    gr: { name: "Πυροσβεστική", icon: FireExtinguisher }
   },
   embassy: {
-    en: { name: "Embassies & Consulates", icon: "🏛️" },
-    gr: { name: "Πρεσβείες & Προξενεία", icon: "🏛️" }
+    en: { name: "Embassies & Consulates", icon: Public },
+    gr: { name: "Πρεσβείες & Προξενεία", icon: Public }
   },
   boat: {
-    en: { name: "Emergency Boat Help", icon: "⛵" },
-    gr: { name: "Ναυτική Βοήθεια", icon: "⛵" }
+    en: { name: "Emergency Boat Help", icon: Sailing },
+    gr: { name: "Ναυτική Βοήθεια", icon: Sailing }
   },
   police: {
-    en: { name: "Police", icon: "👮" },
-    gr: { name: "Αστυνομία", icon: "👮" }
+    en: { name: "Police", icon: Gavel },
+    gr: { name: "Αστυνομία", icon: Gavel }
   }
 };
 
