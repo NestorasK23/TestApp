@@ -8,6 +8,18 @@ export const serviceCategories = {
     en: { name: "Doctors", icon: "👩‍⚕️" },
     gr: { name: "Γιατροί", icon: "👩‍⚕️" }
   },
+  dentist: {
+    en: { name: "Dentists", icon: "🦷" },
+    gr: { name: "Οδοντίατροι", icon: "🦷" }
+  },
+  pediatrician: {
+    en: { name: "Pediatricians", icon: "👶" },
+    gr: { name: "Παιδίατροι", icon: "👶" }
+  },
+  veterinary: {
+    en: { name: "Veterinary Clinics", icon: "🐾" },
+    gr: { name: "Κτηνιατρικές Κλινικές", icon: "🐾" }
+  },
   roadside: {
     en: { name: "Roadside Assistance", icon: "🚗" },
     gr: { name: "Οδική Βοήθεια", icon: "🚗" }
@@ -19,6 +31,18 @@ export const serviceCategories = {
   hospital: {
     en: { name: "Hospitals", icon: "🏥" },
     gr: { name: "Νοσοκομεία", icon: "🏥" }
+  },
+  fire: {
+    en: { name: "Fire Department", icon: "🚒" },
+    gr: { name: "Πυροσβεστική", icon: "🚒" }
+  },
+  embassy: {
+    en: { name: "Embassies & Consulates", icon: "🏛️" },
+    gr: { name: "Πρεσβείες & Προξενεία", icon: "🏛️" }
+  },
+  boat: {
+    en: { name: "Emergency Boat Help", icon: "⛵" },
+    gr: { name: "Ναυτική Βοήθεια", icon: "⛵" }
   },
   police: {
     en: { name: "Police", icon: "👮" },
