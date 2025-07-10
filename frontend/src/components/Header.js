@@ -1,8 +1,9 @@
 import React from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { useState } from 'react';
+import { Button } from './ui/button';
 
-const Header = ({ language }) => {
+const Header = ({ language, onLanguageChange }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
