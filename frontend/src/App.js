@@ -1,10 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import { services, serviceCategories, translations } from './data/mockData';
 import CategoryGrid from './components/CategoryGrid';
 import ServiceList from './components/ServiceList';
 import LanguageToggle from './components/LanguageToggle';
-import { MapPin } from 'lucide-react';
+import HeroSection from './components/HeroSection';
+import HowItWorksSection from './components/HowItWorksSection';
+import WhyHelpHereSection from './components/WhyHelpHereSection';
+import TestimonialsSection from './components/TestimonialsSection';
+import BusinessSection from './components/BusinessSection';
+import Footer from './components/Footer';
+import { Button } from './components/ui/button';
+import { ArrowLeft } from 'lucide-react';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -14,6 +21,7 @@ function App() {
     return browserLang.startsWith('el') ? 'gr' : 'en';
   });
 
+  const categoryGridRef = useRef(null);
   const currentTranslations = translations[language];
 
   const handleCategorySelect = (category) => {
@@ -28,6 +36,12 @@ function App() {
     setLanguage(newLanguage);
   };
 
+  const handleGetStarted = () => {
+    if (categoryGridRef.current) {
+      categoryGridRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   // Auto-detect browser language on component mount
   useEffect(() => {
     const browserLang = navigator.language || navigator.userLanguage;
@@ -39,40 +53,48 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100">
+    <div className="min-h-screen bg-white">
       <LanguageToggle 
         currentLanguage={language} 
         onLanguageChange={handleLanguageChange} 
       />
       
-      <div className="container mx-auto px-4 py-4 max-w-md">
-        {/* Compact Header with Logo */}
-        <div className="text-center mb-6">
-          <div className="flex items-center justify-center mb-2">
-            <img 
-              src="/logo.svg" 
-              alt="HelpHere Logo" 
-              className="h-8 w-auto max-w-full object-contain"
+      {/* Sticky Category Bar - Always Visible */}
+      <div className="sticky top-0 z-40 bg-white shadow-md border-b-2 border-blue-100" ref={categoryGridRef}>
+        <div className="container mx-auto px-4 py-4 max-w-6xl">
+          <div className="text-center mb-4">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-800">
+              {selectedCategory ? (
+                <div className="flex items-center justify-center space-x-4">
+                  <Button
+                    variant="ghost"
+                    onClick={handleBackToCategories}
+                    className="flex items-center space-x-2 text-blue-700 hover:text-blue-800 hover:bg-blue-50"
+                  >
+                    <ArrowLeft className="h-5 w-5" />
+                    <span>{currentTranslations.backToCategories}</span>
+                  </Button>
+                </div>
+              ) : (
+                currentTranslations.selectCategory
+              )}
+            </h2>
+          </div>
+          
+          {!selectedCategory && (
+            <CategoryGrid
+              language={language}
+              onCategorySelect={handleCategorySelect}
+              translations={currentTranslations}
             />
-          </div>
-          <p className="text-gray-600 text-sm">
-            {currentTranslations.appSubtitle}
-          </p>
-          <div className="flex items-center justify-center space-x-4 mt-2 text-xs text-gray-500">
-            <div className="flex items-center space-x-1">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span>Online</span>
-            </div>
-            <div className="flex items-center space-x-1">
-              <MapPin className="h-3 w-3" />
-              <span>Corfu, Greece</span>
-            </div>
-          </div>
+          )}
         </div>
+      </div>
 
-        {/* Main Content */}
-        <div className="bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
-          {selectedCategory ? (
+      {/* Service List Section - Shows when category is selected */}
+      {selectedCategory && (
+        <div className="bg-gray-50 min-h-screen">
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
             <ServiceList
               category={selectedCategory}
               services={services[selectedCategory] || []}
@@ -81,25 +103,36 @@ function App() {
               onBack={handleBackToCategories}
               categoryName={serviceCategories[selectedCategory]}
             />
-          ) : (
-            <CategoryGrid
-              language={language}
-              onCategorySelect={handleCategorySelect}
-              translations={currentTranslations}
-            />
-          )}
+          </div>
         </div>
+      )}
 
-        {/* Footer */}
-        <div className="text-center mt-4 text-xs text-gray-500">
-          <p>
-            {language === 'en' 
-              ? 'Made for tourists visiting beautiful Corfu 🏝️' 
-              : 'Φτιαγμένο για τουρίστες που επισκέπτονται την όμορφη Κέρκυρα 🏝️'
-            }
-          </p>
-        </div>
-      </div>
+      {/* Homepage Content - Shows when no category is selected */}
+      {!selectedCategory && (
+        <>
+          {/* Hero Section */}
+          <HeroSection 
+            language={language} 
+            translations={currentTranslations}
+            onGetStarted={handleGetStarted}
+          />
+
+          {/* How It Works Section */}
+          <HowItWorksSection language={language} />
+
+          {/* Why HelpHere Section */}
+          <WhyHelpHereSection language={language} />
+
+          {/* Testimonials Section */}
+          <TestimonialsSection language={language} />
+
+          {/* Business Section */}
+          <BusinessSection language={language} />
+
+          {/* Footer */}
+          <Footer language={language} />
+        </>
+      )}
     </div>
   );
 }
