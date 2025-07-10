@@ -46,8 +46,8 @@ export const serviceCategories = {
     gr: { name: "Ναυτική Βοήθεια", icon: "sailing" }
   },
   police: {
-    en: { name: "Police", icon: "gavel" },
-    gr: { name: "Αστυνομία", icon: "gavel" }
+    en: { name: "Police", icon: "security" },
+    gr: { name: "Αστυνομία", icon: "security" }
   }
 };
 
