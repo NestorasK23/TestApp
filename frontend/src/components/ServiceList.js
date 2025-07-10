@@ -11,6 +11,8 @@ const ServiceList = ({
   onBack,
   categoryName 
 }) => {
+  const IconComponent = categoryName.icon;
+  
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
@@ -26,11 +28,11 @@ const ServiceList = ({
       
       <div className="text-center space-y-2">
         <h2 className="text-2xl font-bold text-gray-800 flex items-center justify-center space-x-2">
-          <span className="text-3xl">{categoryName.icon}</span>
+          <IconComponent className="h-8 w-8 text-blue-600" />
           <span>{categoryName[language].name}</span>
         </h2>
         <p className="text-gray-600 text-sm">
-          {services.length} {services.length === 1 ? 'service' : 'services'} available
+          {services.length} {services.length === 1 ? (language === 'en' ? 'service' : 'υπηρεσία') : (language === 'en' ? 'services' : 'υπηρεσίες')} {language === 'en' ? 'available' : 'διαθέσιμες'}
         </p>
       </div>
       
@@ -43,7 +45,7 @@ const ServiceList = ({
           {services.map((service) => (
             <ServiceCard
               key={service.id}
-              service={service}
+              service={{ ...service, categoryIcon: IconComponent }}
               language={language}
               translations={translations}
               category={category}
