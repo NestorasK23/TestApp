@@ -10,8 +10,8 @@ export const serviceCategories = {
     gr: { name: "Γιατροί", icon: "medical_information" }
   },
   dentist: {
-    en: { name: "Dentists", icon: "psychology" },
-    gr: { name: "Οδοντίατροι", icon: "psychology" }
+    en: { name: "Dentists", icon: "sentiment_very_satisfied" },
+    gr: { name: "Οδοντίατροι", icon: "sentiment_very_satisfied" }
   },
   pediatrician: {
     en: { name: "Pediatricians", icon: "child_care" },
