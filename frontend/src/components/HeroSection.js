@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from './ui/button';
-import { ArrowRight } from 'lucide-react';
 
 const HeroSection = ({ language, translations, onGetStarted }) => {
   return (
@@ -8,13 +7,6 @@ const HeroSection = ({ language, translations, onGetStarted }) => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-6">
-              <img 
-                src="/logo.svg" 
-                alt="HelpHere Logo" 
-                className="h-12 w-auto"
-              />
-            </div>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
               {language === 'en' 
                 ? 'Emergency Local Help for Tourists in Corfu'
@@ -32,7 +24,6 @@ const HeroSection = ({ language, translations, onGetStarted }) => {
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
             >
               {language === 'en' ? 'Find Help Near You' : 'Βρείτε Βοήθεια Κοντά Σας'}
-              <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
           <div className="text-center">
