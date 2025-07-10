@@ -42,7 +42,7 @@ const Header = ({ language, onLanguageChange }) => {
             <img 
               src="/logo.svg" 
               alt="HelpHere Logo" 
-              className="h-8 w-auto"
+              className="h-12 lg:h-14 w-auto"
             />
             <div>
               <span className="text-xl font-bold text-gray-900">HelpHere</span>
@@ -55,31 +55,56 @@ const Header = ({ language, onLanguageChange }) => {
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
-            {menuItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
+          {/* Desktop Navigation and Language Switcher */}
+          <div className="hidden md:flex items-center space-x-6">
+            <nav className="flex items-center space-x-6">
+              {menuItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
+                >
+                  {item.label}
+                </button>
+              ))}
+            </nav>
+            
+            {/* Language Switcher */}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => onLanguageChange(language === 'en' ? 'gr' : 'en')}
+              className="bg-white border-2 border-blue-200 hover:border-blue-300 font-medium text-sm px-3 py-2"
+            >
+              <Globe className="h-4 w-4 mr-2" />
+              {language === 'en' ? '🇬🇷 ΕΛ' : '🇬🇧 EN'}
+            </Button>
+          </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-600" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-600" />
-            )}
-          </button>
+          {/* Mobile Menu Button and Language Switcher */}
+          <div className="md:hidden flex items-center space-x-2">
+            {/* Mobile Language Switcher */}
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => onLanguageChange(language === 'en' ? 'gr' : 'en')}
+              className="bg-white border-2 border-blue-200 hover:border-blue-300 font-medium text-sm px-2 py-1"
+            >
+              {language === 'en' ? '🇬🇷' : '🇬🇧'}
+            </Button>
+            
+            <button
+              className="p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6 text-gray-600" />
+              ) : (
+                <Menu className="h-6 w-6 text-gray-600" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
