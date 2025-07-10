@@ -38,8 +38,8 @@ export const serviceCategories = {
     gr: { name: "Πυροσβεστική", icon: "fire_extinguisher" }
   },
   embassy: {
-    en: { name: "Embassies & Consulates", icon: "public" },
-    gr: { name: "Πρεσβείες & Προξενεία", icon: "public" }
+    en: { name: "Embassies & Consulates", icon: "flag" },
+    gr: { name: "Πρεσβείες & Προξενεία", icon: "flag" }
   },
   boat: {
     en: { name: "Emergency Boat Help", icon: "sailing" },
