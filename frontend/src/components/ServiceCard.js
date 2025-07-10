@@ -15,69 +15,84 @@ const ServiceCard = ({ service, language, translations, category }) => {
     window.open(googleMapsUrl, '_blank');
   };
 
-  // Category-specific color schemes with exact hex colors
+  // Category-specific color schemes with diverse hex colors
   const getCategoryColors = (category) => {
     switch (category) {
       case 'pharmacy':
         return {
-          backgroundColor: '#DFF0D8',
+          backgroundColor: '#D1FAE5', // Light green
           callButtonColor: 'bg-green-600 hover:bg-green-700 text-white',
           directionButtonColor: 'bg-white border-2 border-green-500 text-green-700 hover:bg-green-50'
         };
       case 'doctor':
-      case 'pediatrician':
-      case 'hospital':
         return {
-          backgroundColor: '#D9EDF7',
+          backgroundColor: '#DBEAFE', // Light blue
           callButtonColor: 'bg-blue-600 hover:bg-blue-700 text-white',
           directionButtonColor: 'bg-white border-2 border-blue-500 text-blue-700 hover:bg-blue-50'
         };
+      case 'pediatrician':
+        return {
+          backgroundColor: '#CFFAFE', // Light cyan
+          callButtonColor: 'bg-cyan-600 hover:bg-cyan-700 text-white',
+          directionButtonColor: 'bg-white border-2 border-cyan-500 text-cyan-700 hover:bg-cyan-50'
+        };
+      case 'hospital':
+        return {
+          backgroundColor: '#E0E7FF', // Light indigo
+          callButtonColor: 'bg-indigo-600 hover:bg-indigo-700 text-white',
+          directionButtonColor: 'bg-white border-2 border-indigo-500 text-indigo-700 hover:bg-indigo-50'
+        };
       case 'dentist':
         return {
-          backgroundColor: '#FDEBD0',
-          callButtonColor: 'bg-orange-600 hover:bg-orange-700 text-white',
-          directionButtonColor: 'bg-white border-2 border-orange-500 text-orange-700 hover:bg-orange-50'
+          backgroundColor: '#FEF3C7', // Light amber
+          callButtonColor: 'bg-amber-600 hover:bg-amber-700 text-white',
+          directionButtonColor: 'bg-white border-2 border-amber-500 text-amber-700 hover:bg-amber-50'
         };
       case 'roadside':
         return {
-          backgroundColor: '#FCF3CF',
+          backgroundColor: '#FEFCE8', // Light yellow
           callButtonColor: 'bg-yellow-600 hover:bg-yellow-700 text-white',
           directionButtonColor: 'bg-white border-2 border-yellow-500 text-yellow-700 hover:bg-yellow-50'
         };
       case 'police':
         return {
-          backgroundColor: '#FADBD8',
+          backgroundColor: '#FFE4E6', // Light rose
+          callButtonColor: 'bg-rose-600 hover:bg-rose-700 text-white',
+          directionButtonColor: 'bg-white border-2 border-rose-500 text-rose-700 hover:bg-rose-50'
+        };
+      case 'fire':
+        return {
+          backgroundColor: '#FEE2E2', // Light red
           callButtonColor: 'bg-red-600 hover:bg-red-700 text-white',
           directionButtonColor: 'bg-white border-2 border-red-500 text-red-700 hover:bg-red-50'
         };
-      case 'fire':
       case 'boat':
         return {
-          backgroundColor: '#F5B7B1',
-          callButtonColor: 'bg-red-600 hover:bg-red-700 text-white',
-          directionButtonColor: 'bg-white border-2 border-red-500 text-red-700 hover:bg-red-50'
+          backgroundColor: '#FCE7F3', // Light pink
+          callButtonColor: 'bg-pink-600 hover:bg-pink-700 text-white',
+          directionButtonColor: 'bg-white border-2 border-pink-500 text-pink-700 hover:bg-pink-50'
         };
       case 'atm':
         return {
-          backgroundColor: '#F5F5F5',
-          callButtonColor: 'bg-gray-600 hover:bg-gray-700 text-white',
-          directionButtonColor: 'bg-white border-2 border-gray-500 text-gray-700 hover:bg-gray-50'
+          backgroundColor: '#F1F5F9', // Light slate
+          callButtonColor: 'bg-slate-600 hover:bg-slate-700 text-white',
+          directionButtonColor: 'bg-white border-2 border-slate-500 text-slate-700 hover:bg-slate-50'
         };
       case 'veterinary':
         return {
-          backgroundColor: '#D0ECE7',
-          callButtonColor: 'bg-teal-600 hover:bg-teal-700 text-white',
-          directionButtonColor: 'bg-white border-2 border-teal-500 text-teal-700 hover:bg-teal-50'
+          backgroundColor: '#D1FAE5', // Light emerald
+          callButtonColor: 'bg-emerald-600 hover:bg-emerald-700 text-white',
+          directionButtonColor: 'bg-white border-2 border-emerald-500 text-emerald-700 hover:bg-emerald-50'
         };
       case 'embassy':
         return {
-          backgroundColor: '#D6EAF8',
-          callButtonColor: 'bg-blue-800 hover:bg-blue-900 text-white',
-          directionButtonColor: 'bg-white border-2 border-blue-800 text-blue-800 hover:bg-blue-50'
+          backgroundColor: '#EDE9FE', // Light purple
+          callButtonColor: 'bg-purple-600 hover:bg-purple-700 text-white',
+          directionButtonColor: 'bg-white border-2 border-purple-500 text-purple-700 hover:bg-purple-50'
         };
       default:
         return {
-          backgroundColor: '#D9EDF7',
+          backgroundColor: '#DBEAFE',
           callButtonColor: 'bg-blue-600 hover:bg-blue-700 text-white',
           directionButtonColor: 'bg-white border-2 border-blue-500 text-blue-700 hover:bg-blue-50'
         };
