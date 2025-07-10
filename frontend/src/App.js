@@ -45,20 +45,20 @@ function App() {
         onLanguageChange={handleLanguageChange} 
       />
       
-      <div className="container mx-auto px-4 py-8 max-w-md">
-        {/* Header with Logo */}
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center mb-4">
+      <div className="container mx-auto px-4 py-4 max-w-md">
+        {/* Compact Header with Logo */}
+        <div className="text-center mb-6">
+          <div className="flex items-center justify-center mb-2">
             <img 
               src="/logo.svg" 
               alt="HelpHere Logo" 
-              className="h-16 w-auto max-w-full object-contain"
+              className="h-10 w-auto max-w-full object-contain"
             />
           </div>
-          <p className="text-gray-600 text-sm font-medium">
+          <p className="text-gray-600 text-sm">
             {currentTranslations.appSubtitle}
           </p>
-          <div className="flex items-center justify-center space-x-4 mt-4 text-xs text-gray-500">
+          <div className="flex items-center justify-center space-x-4 mt-2 text-xs text-gray-500">
             <div className="flex items-center space-x-1">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span>Online</span>
@@ -91,7 +91,7 @@ function App() {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-6 text-xs text-gray-500">
+        <div className="text-center mt-4 text-xs text-gray-500">
           <p>
             {language === 'en' 
               ? 'Made for tourists visiting beautiful Corfu 🏝️' 
