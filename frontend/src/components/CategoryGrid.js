@@ -1,9 +1,38 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { serviceCategories } from '../data/mockData';
+import {
+  MedicalServices,
+  LocalHospital,
+  DirectionsCar,
+  CreditCard,
+  Gavel,
+  FireExtinguisher,
+  Pets,
+  Public,
+  Mood,
+  Sailing
+} from '@mui/icons-material';
 
 const CategoryGrid = ({ language, onCategorySelect, translations }) => {
   const categories = Object.entries(serviceCategories);
+
+  // Icon mapping
+  const getIconComponent = (iconName) => {
+    const iconMap = {
+      medical_services: MedicalServices,
+      local_hospital: LocalHospital,
+      directions_car: DirectionsCar,
+      credit_card: CreditCard,
+      gavel: Gavel,
+      fire_extinguisher: FireExtinguisher,
+      pets: Pets,
+      public: Public,
+      mood: Mood,
+      sailing: Sailing
+    };
+    return iconMap[iconName] || MedicalServices;
+  };
 
   return (
     <div className="space-y-6">
@@ -15,7 +44,7 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
       
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {categories.map(([key, category]) => {
-          const IconComponent = category.icon;
+          const IconComponent = getIconComponent(category.icon);
           return (
             <Card
               key={key}
