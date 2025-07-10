@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
-import { Button } from './ui/button';
 import { serviceCategories } from '../data/mockData';
 
 const CategoryGrid = ({ language, onCategorySelect, translations }) => {
@@ -12,35 +11,33 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
         <h2 className="text-2xl font-bold text-gray-800">
           {translations.selectCategory}
         </h2>
-        <div className="bg-red-100 border border-red-300 rounded-lg p-3">
-          <p className="text-red-800 font-semibold text-lg">
-            {translations.emergencyNumber}
-          </p>
-        </div>
       </div>
       
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-        {categories.map(([key, category]) => (
-          <Card
-            key={key}
-            className="hover:shadow-xl transition-all duration-300 cursor-pointer group bg-gradient-to-br from-white to-blue-50/50 hover:from-blue-100/50 hover:to-blue-200/50 border-2 border-blue-100 hover:border-blue-300"
-            onClick={() => onCategorySelect(key)}
-          >
-            <CardContent className="p-4 text-center">
-              <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-200">
-                {category.icon}
-              </div>
-              <h3 className="font-bold text-gray-800 text-sm leading-tight group-hover:text-blue-800 transition-colors duration-200">
-                {category[language].name}
-              </h3>
-            </CardContent>
-          </Card>
-        ))}
+        {categories.map(([key, category]) => {
+          const IconComponent = category.icon;
+          return (
+            <Card
+              key={key}
+              className="hover:shadow-xl transition-all duration-300 cursor-pointer group bg-gradient-to-br from-white to-blue-50/50 hover:from-blue-100/50 hover:to-blue-200/50 border-2 border-blue-100 hover:border-blue-300"
+              onClick={() => onCategorySelect(key)}
+            >
+              <CardContent className="p-4 text-center">
+                <div className="text-blue-600 mb-2 group-hover:scale-110 transition-transform duration-200 flex justify-center">
+                  <IconComponent className="h-8 w-8" />
+                </div>
+                <h3 className="font-bold text-gray-800 text-sm leading-tight group-hover:text-blue-800 transition-colors duration-200">
+                  {category[language].name}
+                </h3>
+              </CardContent>
+            </Card>
+          );
+        })}
       </div>
       
       <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
         <p className="text-blue-800 text-sm font-medium">
-          💡 Tap any category to find nearby services
+          💡 {language === 'en' ? 'Tap any category to find nearby services' : 'Πατήστε οποιαδήποτε κατηγορία για να βρείτε κοντινές υπηρεσίες'}
         </p>
       </div>
     </div>
