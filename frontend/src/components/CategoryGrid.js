@@ -48,12 +48,12 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
           return (
             <Card
               key={key}
-              className="hover:shadow-xl transition-all duration-300 cursor-pointer group bg-gradient-to-br from-white to-blue-50/50 hover:from-blue-100/50 hover:to-blue-200/50 border-2 border-blue-100 hover:border-blue-300"
+              className="hover:shadow-xl transition-all duration-300 cursor-pointer group bg-gradient-to-br from-white to-blue-50/50 hover:from-blue-100/50 hover:to-blue-200/50 border-2 border-blue-100 hover:border-blue-300 rounded-lg"
               onClick={() => onCategorySelect(key)}
             >
               <CardContent className="p-4 text-center">
                 <div className="text-blue-600 mb-2 group-hover:scale-110 transition-transform duration-200 flex justify-center">
-                  <IconComponent className="h-8 w-8" />
+                  <IconComponent className="h-7 w-7" />
                 </div>
                 <h3 className="font-bold text-gray-800 text-sm leading-tight group-hover:text-blue-800 transition-colors duration-200">
                   {category[language].name}
