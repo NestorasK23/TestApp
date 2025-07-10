@@ -139,17 +139,17 @@ const ServiceCard = ({ service, language, translations, category }) => {
         </div>
         
         {/* Improved Button Layout with responsive stacking */}
-        <div className="flex flex-col md:flex-row gap-3 pt-4">
+        <div className="flex flex-col md:flex-row gap-3 pt-4 items-stretch">
           <Button
             onClick={() => handleCall(service.phone)}
-            className={`flex-1 ${colors.callButtonColor} font-semibold transition-all duration-200 shadow-md hover:shadow-lg rounded-lg px-6 py-3 min-h-[48px] text-sm`}
+            className={`flex-1 ${colors.callButtonColor} font-semibold transition-all duration-200 shadow-md hover:shadow-lg rounded-lg px-6 py-3 h-12 text-sm flex items-center justify-center`}
           >
             <Phone className="h-4 w-4 mr-2" />
             {translations.callNow}
           </Button>
           <Button
             onClick={() => handleDirections(service.address[language])}
-            className={`flex-1 ${colors.directionButtonColor} font-semibold transition-all duration-200 shadow-sm hover:shadow-md rounded-lg px-6 py-3 min-h-[48px] text-sm`}
+            className={`flex-1 ${colors.directionButtonColor} font-semibold transition-all duration-200 shadow-sm hover:shadow-md rounded-lg px-6 py-3 h-12 text-sm flex items-center justify-center`}
           >
             <Navigation className="h-4 w-4 mr-2" />
             {translations.directions}
