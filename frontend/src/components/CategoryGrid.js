@@ -26,12 +26,16 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
     const iconMap = {
       medical_services: MedicalServices,
       local_hospital: LocalHospital,
+      medical_information: MedicalInformation,
+      child_care: ChildCare,
+      psychology: Psychology,
       directions_car: DirectionsCar,
       credit_card: CreditCard,
       gavel: Gavel,
       fire_extinguisher: FireExtinguisher,
       pets: Pets,
       public: Public,
+      flag: Flag,
       mood: Mood,
       sailing: Sailing
     };
