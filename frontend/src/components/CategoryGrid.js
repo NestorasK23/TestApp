@@ -48,12 +48,6 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
 
   return (
     <div className="space-y-6">
-      <div className="text-center space-y-2">
-        <h2 className="text-2xl font-bold text-gray-800">
-          {translations.selectCategory}
-        </h2>
-      </div>
-      
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
         {categories.map(([key, category]) => {
           const iconName = category.en.icon; // Get icon from the language object
