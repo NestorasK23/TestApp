@@ -19,18 +19,18 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
         </div>
       </div>
       
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {categories.map(([key, category]) => (
           <Card
             key={key}
             className="hover:shadow-xl transition-all duration-300 cursor-pointer group bg-gradient-to-br from-white to-blue-50/50 hover:from-blue-100/50 hover:to-blue-200/50 border-2 border-blue-100 hover:border-blue-300"
             onClick={() => onCategorySelect(key)}
           >
-            <CardContent className="p-6 text-center">
-              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform duration-200">
+            <CardContent className="p-4 text-center">
+              <div className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-200">
                 {category.icon}
               </div>
-              <h3 className="font-bold text-gray-800 text-base group-hover:text-blue-800 transition-colors duration-200">
+              <h3 className="font-bold text-gray-800 text-sm leading-tight group-hover:text-blue-800 transition-colors duration-200">
                 {category[language].name}
               </h3>
             </CardContent>
