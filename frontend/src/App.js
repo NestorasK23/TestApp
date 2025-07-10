@@ -3,7 +3,6 @@ import './App.css';
 import { services, serviceCategories, translations } from './data/mockData';
 import CategoryGrid from './components/CategoryGrid';
 import ServiceList from './components/ServiceList';
-import LanguageToggle from './components/LanguageToggle';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import HowItWorksSection from './components/HowItWorksSection';
