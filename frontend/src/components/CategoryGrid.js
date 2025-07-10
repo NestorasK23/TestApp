@@ -44,8 +44,9 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
       
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {categories.map(([key, category]) => {
-          console.log('Category:', key, 'Icon:', category.icon); // Debug log
-          const IconComponent = getIconComponent(category.icon);
+          const iconName = category.en.icon; // Get icon from the language object
+          console.log('Category:', key, 'Icon:', iconName); // Debug log
+          const IconComponent = getIconComponent(iconName);
           
           const getCategoryCardColor = (categoryKey) => {
             switch (categoryKey) {
