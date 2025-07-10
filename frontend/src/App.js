@@ -4,7 +4,7 @@ import { services, serviceCategories, translations } from './data/mockData';
 import CategoryGrid from './components/CategoryGrid';
 import ServiceList from './components/ServiceList';
 import LanguageToggle from './components/LanguageToggle';
-import { MapPin, Wifi, Phone } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -46,13 +46,14 @@ function App() {
       />
       
       <div className="container mx-auto px-4 py-8 max-w-md">
-        {/* Header */}
+        {/* Header with Logo */}
         <div className="text-center mb-8">
-          <div className="flex items-center justify-center space-x-2 mb-2">
-            <MapPin className="h-8 w-8 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-800">
-              {currentTranslations.appTitle}
-            </h1>
+          <div className="flex items-center justify-center mb-4">
+            <img 
+              src="/logo.svg" 
+              alt="HelpHere Logo" 
+              className="h-16 w-auto max-w-full object-contain"
+            />
           </div>
           <p className="text-gray-600 text-sm font-medium">
             {currentTranslations.appSubtitle}
