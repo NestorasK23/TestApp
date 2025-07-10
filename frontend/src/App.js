@@ -4,6 +4,7 @@ import { services, serviceCategories, translations } from './data/mockData';
 import CategoryGrid from './components/CategoryGrid';
 import ServiceList from './components/ServiceList';
 import LanguageToggle from './components/LanguageToggle';
+import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import HowItWorksSection from './components/HowItWorksSection';
 import WhyHelpHereSection from './components/WhyHelpHereSection';
@@ -58,6 +59,9 @@ function App() {
         currentLanguage={language} 
         onLanguageChange={handleLanguageChange} 
       />
+      
+      {/* Main Header */}
+      <Header language={language} />
       
       {/* Sticky Category Bar - Always Visible */}
       <div className="sticky top-0 z-40 bg-white shadow-md border-b-2 border-blue-100" ref={categoryGridRef}>
