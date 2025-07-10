@@ -105,13 +105,6 @@ const Header = ({ language, onLanguageChange }) => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
             <div className="flex flex-col space-y-3">
-              {/* Mobile Tagline */}
-              <p className="text-sm text-gray-600 mb-2">
-                {language === 'en' 
-                  ? 'Emergency Help for Tourists in Corfu'
-                  : 'Βοήθεια Έκτακτης Ανάγκης για Τουρίστες στην Κέρκυρα'
-                }
-              </p>
               {menuItems.map((item) => (
                 <button
                   key={item.id}
