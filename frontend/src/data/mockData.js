@@ -6,16 +6,16 @@ export const serviceCategories = {
     gr: { name: "Φαρμακεία", icon: "medical_services" }
   },
   doctor: {
-    en: { name: "Doctors", icon: "local_hospital" },
-    gr: { name: "Γιατροί", icon: "local_hospital" }
+    en: { name: "Doctors", icon: "medical_information" },
+    gr: { name: "Γιατροί", icon: "medical_information" }
   },
   dentist: {
-    en: { name: "Dentists", icon: "mood" },
-    gr: { name: "Οδοντίατροι", icon: "mood" }
+    en: { name: "Dentists", icon: "psychology" },
+    gr: { name: "Οδοντίατροι", icon: "psychology" }
   },
   pediatrician: {
-    en: { name: "Pediatricians", icon: "local_hospital" },
-    gr: { name: "Παιδίατροι", icon: "local_hospital" }
+    en: { name: "Pediatricians", icon: "child_care" },
+    gr: { name: "Παιδίατροι", icon: "child_care" }
   },
   veterinary: {
     en: { name: "Veterinary Clinics", icon: "pets" },
