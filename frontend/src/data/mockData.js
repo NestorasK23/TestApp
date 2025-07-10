@@ -160,6 +160,138 @@ export const services = {
       }
     }
   ],
+  dentist: [
+    {
+      id: 13,
+      name: {
+        en: "Dr. Dimitris Kostas - Dental Clinic",
+        gr: "Δρ. Δημήτρης Κώστας - Οδοντιατρική Κλινική"
+      },
+      address: {
+        en: "32 Ioannou Theotoki Street, Corfu",
+        gr: "Ιωάννου Θεοτόκη 32, Κέρκυρα"
+      },
+      description: {
+        en: "Modern dental clinic with emergency services. English-speaking dentist available.",
+        gr: "Μοντέρνη οδοντιατρική κλινική με υπηρεσίες επειγόντων. Διαθέσιμος αγγλόφωνος οδοντίατρος."
+      },
+      phone: "+30 2661 047890",
+      coordinates: "39.6234,19.9123",
+      hours: {
+        en: "Mon-Fri: 9:00-18:00, Emergency: 24/7",
+        gr: "Δευ-Παρ: 9:00-18:00, Επείγοντα: 24/7"
+      }
+    },
+    {
+      id: 14,
+      name: {
+        en: "Smile Dental Care",
+        gr: "Χαμόγελο Οδοντιατρική Φροντίδα"
+      },
+      address: {
+        en: "8 Samaras Street, Corfu",
+        gr: "Σαμαρά 8, Κέρκυρα"
+      },
+      description: {
+        en: "Tourist-friendly dental clinic. Quick appointments for dental emergencies.",
+        gr: "Φιλική προς τουρίστες οδοντιατρική κλινική. Γρήγορα ραντεβού για οδοντιατρικές επείγουσες καταστάσεις."
+      },
+      phone: "+30 2661 055432",
+      coordinates: "39.6145,19.9201",
+      hours: {
+        en: "Mon-Sat: 10:00-20:00",
+        gr: "Δευ-Σαβ: 10:00-20:00"
+      }
+    }
+  ],
+  pediatrician: [
+    {
+      id: 15,
+      name: {
+        en: "Dr. Sofia Nikolaou - Pediatrics",
+        gr: "Δρ. Σοφία Νικολάου - Παιδιατρική"
+      },
+      address: {
+        en: "22 Evgeniou Voulgareos Street, Corfu",
+        gr: "Ευγενίου Βουλγαρέως 22, Κέρκυρα"
+      },
+      description: {
+        en: "Experienced pediatrician with multilingual staff. Child-friendly environment.",
+        gr: "Έμπειρη παιδίατρος με πολύγλωσσο προσωπικό. Φιλικό περιβάλλον για παιδιά."
+      },
+      phone: "+30 2661 056789",
+      coordinates: "39.6178,19.9089",
+      hours: {
+        en: "Mon-Fri: 8:00-16:00, Emergency: 24/7",
+        gr: "Δευ-Παρ: 8:00-16:00, Επείγοντα: 24/7"
+      }
+    },
+    {
+      id: 16,
+      name: {
+        en: "Kids Care Clinic",
+        gr: "Κλινική Φροντίδας Παιδιών"
+      },
+      address: {
+        en: "15 Palaiologou Street, Corfu",
+        gr: "Παλαιολόγου 15, Κέρκυρα"
+      },
+      description: {
+        en: "Specialized pediatric clinic. English-speaking doctors available for tourists with children.",
+        gr: "Εξειδικευμένη παιδιατρική κλινική. Αγγλόφωνοι γιατροί διαθέσιμοι για τουρίστες με παιδιά."
+      },
+      phone: "+30 2661 051234",
+      coordinates: "39.6267,19.9145",
+      hours: {
+        en: "Daily: 9:00-17:00",
+        gr: "Καθημερινά: 9:00-17:00"
+      }
+    }
+  ],
+  veterinary: [
+    {
+      id: 17,
+      name: {
+        en: "Corfu Veterinary Clinic",
+        gr: "Κτηνιατρική Κλινική Κέρκυρας"
+      },
+      address: {
+        en: "55 Ethnikis Antistaseos Street, Corfu",
+        gr: "Εθνικής Αντιστάσεως 55, Κέρκυρα"
+      },
+      description: {
+        en: "Full-service veterinary clinic. Emergency care for pets. English-speaking staff.",
+        gr: "Πλήρης κτηνιατρική κλινική. Φροντίδα έκτακτης ανάγκης για κατοικίδια. Αγγλόφωνο προσωπικό."
+      },
+      phone: "+30 2661 062345",
+      coordinates: "39.6089,19.9234",
+      hours: {
+        en: "Mon-Fri: 9:00-19:00, Emergency: 24/7",
+        gr: "Δευ-Παρ: 9:00-19:00, Επείγοντα: 24/7"
+      }
+    },
+    {
+      id: 18,
+      name: {
+        en: "Animal Care Dassia",
+        gr: "Φροντίδα Ζώων Δασσιά"
+      },
+      address: {
+        en: "Main Road, Dassia",
+        gr: "Κεντρικός Δρόμος, Δασσιά"
+      },
+      description: {
+        en: "Tourist area veterinary service. Quick assistance for traveling pets.",
+        gr: "Κτηνιατρική υπηρεσία τουριστικής περιοχής. Γρήγορη βοήθεια για κατοικίδια που ταξιδεύουν."
+      },
+      phone: "+30 2661 093456",
+      coordinates: "39.6445,19.8678",
+      hours: {
+        en: "Daily: 10:00-18:00",
+        gr: "Καθημερινά: 10:00-18:00"
+      }
+    }
+  ],
   roadside: [
     {
       id: 6,
@@ -289,6 +421,159 @@ export const services = {
       hours: {
         en: "24/7 Emergency",
         gr: "24/7 Επείγοντα"
+      }
+    }
+  ],
+  fire: [
+    {
+      id: 19,
+      name: {
+        en: "Corfu Fire Department",
+        gr: "Πυροσβεστική Υπηρεσία Κέρκυρας"
+      },
+      address: {
+        en: "25 Dikigorou Street, Corfu",
+        gr: "Δικηγόρου 25, Κέρκυρα"
+      },
+      description: {
+        en: "Main fire station with emergency response. 24/7 firefighting and rescue services.",
+        gr: "Κύριος πυροσβεστικός σταθμός με επείγουσα ανταπόκριση. 24/7 υπηρεσίες πυρόσβεσης και διάσωσης."
+      },
+      phone: "+30 199",
+      coordinates: "39.6198,19.9167",
+      hours: {
+        en: "24/7",
+        gr: "24/7"
+      }
+    },
+    {
+      id: 20,
+      name: {
+        en: "Corfu North Fire Station",
+        gr: "Πυροσβεστικός Σταθμός Βόρειας Κέρκυρας"
+      },
+      address: {
+        en: "Acharavi, North Corfu",
+        gr: "Αχαράβη, Βόρεια Κέρκυρα"
+      },
+      description: {
+        en: "Northern region fire station. Forest fire prevention and beach rescue services.",
+        gr: "Πυροσβεστικός σταθμός βόρειας περιοχής. Πρόληψη δασικών πυρκαγιών και υπηρεσίες διάσωσης παραλίας."
+      },
+      phone: "+30 199",
+      coordinates: "39.7234,19.8123",
+      hours: {
+        en: "24/7",
+        gr: "24/7"
+      }
+    }
+  ],
+  embassy: [
+    {
+      id: 21,
+      name: {
+        en: "British Vice Consulate",
+        gr: "Βρετανικό Υποπροξενείο"
+      },
+      address: {
+        en: "2 Menekratous Street, Corfu",
+        gr: "Μενεκράτους 2, Κέρκυρα"
+      },
+      description: {
+        en: "British consular services for UK citizens. Emergency assistance and document services.",
+        gr: "Βρετανικές προξενικές υπηρεσίες για πολίτες του Ηνωμένου Βασιλείου. Βοήθεια έκτακτης ανάγκης και υπηρεσίες εγγράφων."
+      },
+      phone: "+30 2661 030055",
+      coordinates: "39.6234,19.9189",
+      hours: {
+        en: "Mon-Fri: 9:00-16:00",
+        gr: "Δευ-Παρ: 9:00-16:00"
+      }
+    },
+    {
+      id: 22,
+      name: {
+        en: "German Honorary Consulate",
+        gr: "Γερμανικό Επίτιμο Προξενείο"
+      },
+      address: {
+        en: "12 Guilford Street, Corfu",
+        gr: "Γκίλφορντ 12, Κέρκυρα"
+      },
+      description: {
+        en: "German consular services. Emergency assistance for German citizens visiting Corfu.",
+        gr: "Γερμανικές προξενικές υπηρεσίες. Βοήθεια έκτακτης ανάγκης για Γερμανούς πολίτες που επισκέπτονται την Κέρκυρα."
+      },
+      phone: "+30 2661 031571",
+      coordinates: "39.6245,19.9201",
+      hours: {
+        en: "Mon-Wed-Fri: 10:00-13:00",
+        gr: "Δευ-Τετ-Παρ: 10:00-13:00"
+      }
+    },
+    {
+      id: 23,
+      name: {
+        en: "Italian Honorary Consulate",
+        gr: "Ιταλικό Επίτιμο Προξενείο"
+      },
+      address: {
+        en: "31 Kapodistrias Street, Corfu",
+        gr: "Καποδιστρίου 31, Κέρκυρα"
+      },
+      description: {
+        en: "Italian consular services. Document assistance and emergency support for Italian tourists.",
+        gr: "Ιταλικές προξενικές υπηρεσίες. Βοήθεια εγγράφων και υποστήριξη έκτακτης ανάγκης για Ιταλούς τουρίστες."
+      },
+      phone: "+30 2661 038351",
+      coordinates: "39.6198,19.9156",
+      hours: {
+        en: "Tue-Thu: 9:00-12:00",
+        gr: "Τρι-Πεμ: 9:00-12:00"
+      }
+    }
+  ],
+  boat: [
+    {
+      id: 24,
+      name: {
+        en: "Corfu Port Authority",
+        gr: "Λιμεναρχείο Κέρκυρας"
+      },
+      address: {
+        en: "Port of Corfu, New Port",
+        gr: "Λιμάνι Κέρκυρας, Νέο Λιμάνι"
+      },
+      description: {
+        en: "Marine emergency services and coast guard. 24/7 sea rescue and assistance.",
+        gr: "Υπηρεσίες θαλάσσιας έκτακτης ανάγκης και λιμενικό σώμα. 24/7 διάσωση και βοήθεια στη θάλασσα."
+      },
+      phone: "+30 108",
+      coordinates: "39.6198,19.9234",
+      hours: {
+        en: "24/7",
+        gr: "24/7"
+      }
+    },
+    {
+      id: 25,
+      name: {
+        en: "Sea Rescue Corfu",
+        gr: "Θαλάσσια Διάσωση Κέρκυρας"
+      },
+      address: {
+        en: "Gouvia Marina, Corfu",
+        gr: "Μαρίνα Γουβιάς, Κέρκυρα"
+      },
+      description: {
+        en: "Professional sea rescue service. Emergency assistance for boats and water activities.",
+        gr: "Επαγγελματική υπηρεσία θαλάσσιας διάσωσης. Βοήθεια έκτακτης ανάγκης για σκάφη και υδάτινες δραστηριότητες."
+      },
+      phone: "+30 2661 091000",
+      coordinates: "39.6789,19.8456",
+      hours: {
+        en: "24/7",
+        gr: "24/7"
       }
     }
   ],
