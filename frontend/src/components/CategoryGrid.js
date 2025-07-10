@@ -11,7 +11,11 @@ import {
   Pets,
   Public,
   Mood,
-  Sailing
+  Sailing,
+  MedicalInformation,
+  ChildCare,
+  Psychology,
+  Flag
 } from '@mui/icons-material';
 
 const CategoryGrid = ({ language, onCategorySelect, translations }) => {
