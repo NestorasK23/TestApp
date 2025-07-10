@@ -138,18 +138,20 @@ const ServiceCard = ({ service, language, translations, category }) => {
           <span className="text-gray-700 font-medium">{service.hours[language]}</span>
         </div>
         
-        {/* Improved Button Layout with responsive stacking */}
-        <div className="flex flex-col md:flex-row gap-3 pt-4 items-stretch">
+        {/* Button Layout with perfect alignment */}
+        <div className="flex flex-col md:flex-row pt-4" style={{ gap: '8px', alignItems: 'center' }}>
           <Button
             onClick={() => handleCall(service.phone)}
-            className={`flex-1 ${colors.callButtonColor} font-semibold transition-all duration-200 shadow-md hover:shadow-lg rounded-lg px-6 py-3 h-12 text-sm flex items-center justify-center`}
+            className={`flex-1 ${colors.callButtonColor} font-semibold transition-all duration-200 shadow-md hover:shadow-lg rounded-lg text-sm`}
+            style={{ height: '48px', padding: '12px 24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
             <Phone className="h-4 w-4 mr-2" />
             {translations.callNow}
           </Button>
           <Button
             onClick={() => handleDirections(service.address[language])}
-            className={`flex-1 ${colors.directionButtonColor} font-semibold transition-all duration-200 shadow-sm hover:shadow-md rounded-lg px-6 py-3 h-12 text-sm flex items-center justify-center`}
+            className={`flex-1 ${colors.directionButtonColor} font-semibold transition-all duration-200 shadow-sm hover:shadow-md rounded-lg text-sm`}
+            style={{ height: '48px', padding: '12px 24px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
           >
             <Navigation className="h-4 w-4 mr-2" />
             {translations.directions}
