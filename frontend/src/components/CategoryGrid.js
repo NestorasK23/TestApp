@@ -117,7 +117,8 @@ const CategoryGrid = ({ language, onCategorySelect, translations }) => {
           return (
             <Card
               key={key}
-              className={`hover:shadow-xl transition-all duration-300 cursor-pointer group bg-gradient-to-br ${getCategoryCardColor(key)} border-2 rounded-lg`}
+              className={`hover:shadow-xl transition-all duration-300 cursor-pointer group border-2 ${getCategoryCardColor(key)} rounded-lg`}
+              style={{ backgroundColor: getCategoryBackgroundColor(key) }}
               onClick={() => onCategorySelect(key)}
             >
               <CardContent className="p-4 text-center">
