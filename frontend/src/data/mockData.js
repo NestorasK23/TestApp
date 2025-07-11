@@ -90,7 +90,44 @@ export const services = {
       hours: { en: "Mon–Sat: 08:00–14:00", gr: "Δευ–Σαβ: 08:00–14:00" }
     }
   ],
-
+  pediatrician: [
+    {
+      id: 16,
+      name: { en: "Dr. Sofia Nikolaou - Pediatrics", gr: "Δρ. Σοφία Νικολάου - Παιδιατρική" },
+      address: { en: "22 Evgeniou Voulgareos St, Corfu Town", gr: "Ευγενίου Βουλγαρέως 22, Κέρκυρα" },
+      description: {
+        en: "Experienced pediatrician with English-speaking staff and well-child visits.",
+        gr: "Έμπειρη παιδίατρος με αγγλόφωνο προσωπικό και πρόγραμμα τακτικών παιδιατρικών επισκέψεων."
+      },
+      phone: "+30 26610 56789",
+      coordinates: "39.6178,19.9089",
+      hours: { en: "Mon–Fri: 08:00–16:00", gr: "Δευ–Παρ: 08:00–16:00" }
+    },
+    {
+      id: 17,
+      name: { en: "Kids Care Clinic", gr: "Κλινική Φροντίδας Παιδιών" },
+      address: { en: "15 Palaiologou St, Corfu Town", gr: "Παλαιολόγου 15, Κέρκυρα" },
+      description: {
+        en: "General pediatric consultations, vaccinations, English support for tourists.",
+        gr: "Γενικές παιδιατρικές συνεδρίες, εμβολιασμοί, αγγλόφωνη υποστήριξη για τουρίστες."
+      },
+      phone: "+30 26610 51234",
+      coordinates: "39.6267,19.9145",
+      hours: { en: "Mon–Fri: 09:00–17:00", gr: "Δευ–Παρ: 09:00–17:00" }
+    },
+    {
+      id: 18,
+      name: { en: "Corfu Children & Teens Medical Center", gr: "Ιατρικό Κέντρο Παιδιών & Εφήβων Κέρκυρας" },
+      address: { en: "10 Papadopoulou Avenue, Corfu Town", gr: "Λεωφόρος Παπαδοπούλου 10, Κέρκυρα" },
+      description: {
+        en: "Specialized clinic for children and adolescent care, English spoken.",
+        gr: "Εξειδικευμένο κέντρο για παιδιά και εφήβους, με αγγλόφωνο προσωπικό."
+      },
+      phone: "+30 26610 60010",
+      coordinates: "39.6225,19.9200",
+      hours: { en: "Mon–Sat: 09:00–18:00", gr: "Δευ–Σαβ: 09:00–18:00" }
+    }
+  ],
   doctor: [
     {
       id: 4,
