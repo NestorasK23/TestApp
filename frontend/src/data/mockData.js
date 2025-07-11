@@ -55,288 +55,267 @@ export const services = {
   pharmacy: [
     {
       id: 1,
-      name: {
-        en: "Pharmacy Chrysanthou",
-        gr: "Φαρμακείο Χρυσάνθου"
-      },
-      address: {
-        en: "25 Georgios Theotoki Street, Corfu Old Town",
-        gr: "Γεωργίου Θεοτόκη 25, Παλιά Πόλη Κέρκυρας"
-      },
+      name: { en: "PANDI CHRISTINA & SIA O.E.", gr: "PANDI CHRISTINA & SIA O.E." },
+      address: { en: "2 Dionysiou Solomou St, Corfu Town", gr: "Διονυσίου Σολωμού 2, Κέρκυρα" },
       description: {
-        en: "24/7 pharmacy with English-speaking staff. Emergency medications available.",
-        gr: "24ωρο φαρμακείο με αγγλόφωνο προσωπικό. Διατίθενται φάρμακα έκτακτης ανάγκης."
+        en: "Main town pharmacy, analgesics, vitamins, oximeters. Open shifts daily.",
+        gr: "Κεντρικό φαρμακείο, αναλγητικά, βιταμίνες, οξύμετρα. Ανοικτό καθημερινά με βάρδιες."
       },
-      phone: "+30 2661 039285",
+      phone: "+30 26610 39281",
       coordinates: "39.6243,19.9217",
-      hours: {
-        en: "24/7",
-        gr: "24/7"
-      }
+      hours: { en: "Mon–Sat: 08:30–15:00 & 17:00–21:00; Sun: Closed", gr: "Δευ–Σαβ: 08:30–15:00 & 17:00–21:00; Κυρ: Κλειστό" }
     },
     {
       id: 2,
-      name: {
-        en: "Kerkyra Pharmacy",
-        gr: "Φαρμακείο Κέρκυρας"
-      },
-      address: {
-        en: "12 Alexandras Avenue, Corfu",
-        gr: "Λεωφόρος Αλεξάνδρας 12, Κέρκυρα"
-      },
+      name: { en: "Systegasména Pharmakeía Alexopoulou Christina", gr: "Συστεγασμένα Φαρμακεία Αλεξοπούλου Χριστίνα" },
+      address: { en: "Sidari, Corfu Prefecture", gr: "Σιντάρι, Κέρκυρα" },
       description: {
-        en: "Modern pharmacy with tourist-friendly service. Prescription refills available.",
-        gr: "Μοντέρνο φαρμακείο με φιλική εξυπηρέτηση για τουρίστες. Διαθέσιμες ανανεώσεις συνταγών."
+        en: "Tourist-area pharmacy in Sidari. Supplements, sunscreens, vaccines.",
+        gr: "Φαρμακείο περιοχής τουριστών στο Σιντάρι. Συμπληρώματα, αντηλιακά, εμβόλια."
       },
-      phone: "+30 2661 042156",
-      coordinates: "39.6198,19.9156",
-      hours: {
-        en: "Mon-Sat: 8:00-22:00, Sun: 9:00-14:00",
-        gr: "Δευ-Σαβ: 8:00-22:00, Κυρ: 9:00-14:00"
-      }
+      phone: "+30 26630 95400",
+      coordinates: "39.8310,19.9100",
+      hours: { en: "Mon–Sat: 08:00–14:00 & 17:00–21:00; Sun: Closed", gr: "Δευ–Σαβ: 08:00–14:00 & 17:00–21:00; Κυρ: Κλειστό" }
     },
     {
       id: 3,
-      name: {
-        en: "Gouvia Pharmacy",
-        gr: "Φαρμακείο Γουβιάς"
-      },
-      address: {
-        en: "Main Street, Gouvia",
-        gr: "Κεντρική Οδός, Γουβιά"
-      },
+      name: { en: "Alexaki Anastassia E.", gr: "Φαρμακείο Αλεξάκη Αναστασία" },
+      address: { en: "Kontokali, Corfu", gr: "Κοντόκαλι, Κέρκυρα" },
       description: {
-        en: "Tourist area pharmacy with sunscreen, first aid supplies, and common medications.",
-        gr: "Φαρμακείο τουριστικής περιοχής με αντηλιακά, είδη πρώτων βοηθειών και συνήθη φάρμακα."
+        en: "Suburban pharmacy near Kontokali. Blood pressure checks, OTC meds.",
+        gr: "Φαρμακείο στα περίχωρα, κοντά στο Κοντόκαλι. Μέτρηση πίεσης, χωρίς συνταγή φάρμακα."
       },
-      phone: "+30 2661 091234",
-      coordinates: "39.6789,19.8456",
-      hours: {
-        en: "Daily: 9:00-21:00",
-        gr: "Καθημερινά: 9:00-21:00"
-      }
+      phone: "+30 26610 91700",
+      coordinates: "39.6280,19.9030",
+      hours: { en: "Mon–Sat: 08:00–14:00", gr: "Δευ–Σαβ: 08:00–14:00" }
     }
   ],
+
   doctor: [
     {
       id: 4,
-      name: {
-        en: "Dr. Maria Papadopoulos - General Practice",
-        gr: "Δρ. Μαρία Παπαδοπούλου - Γενική Ιατρική"
-      },
+      name: { en: "Corfu General Clinic", gr: "Corfu General Clinic" },
       address: {
-        en: "45 Kapodistrias Street, Corfu",
-        gr: "Καποδιστριακή 45, Κέρκυρα"
+        en: "1st km Ethniki Paleokastritsas, Corfu Town",
+        gr: "1ο χλμ Εθνικής Παλαιοκαστρίτσας, Κέρκυρα"
       },
       description: {
-        en: "English-speaking family doctor. Emergency consultations available for tourists.",
-        gr: "Αγγλόφωνη οικογενειακή γιατρός. Διαθέσιμες επείγουσες συμβουλές για τουρίστες."
+        en: "Private clinic with multiple departments & 24/7 ambulance service. English-spoken.",
+        gr: "Ιδιωτικό ιατρικό κέντρο με πολλά τμήματα και ασθενοφόρο 24/7. Αγγλόφωνο προσωπικό."
       },
-      phone: "+30 2661 045678",
-      coordinates: "39.6198,19.9234",
-      hours: {
-        en: "Mon-Fri: 9:00-17:00, Emergency: 24/7",
-        gr: "Δευ-Παρ: 9:00-17:00, Επείγοντα: 24/7"
-      }
+      phone: "+30 26610 36044",
+      coordinates: "39.6190,19.8765",
+      hours: { en: "24/7", gr: "24/7" }
     },
     {
       id: 5,
-      name: {
-        en: "Corfu Medical Center",
-        gr: "Ιατρικό Κέντρο Κέρκυρας"
-      },
+      name: { en: "Corfumedica Day Care Clinic", gr: "Corfumedica Day Care" },
       address: {
-        en: "18 Mantzarou Street, Corfu",
-        gr: "Μαντζάρου 18, Κέρκυρα"
+        en: "3 Mantzarou Street, Corfu Town",
+        gr: "Μαντζάρου 3, Κέρκυρα"
       },
       description: {
-        en: "Multi-specialty clinic with emergency services. Tourist insurance accepted.",
-        gr: "Πολυϊατρείο με υπηρεσίες επειγόντων. Γίνεται δεκτή τουριστική ασφάλιση."
+        en: "Urgent care & diagnostics, house calls in Gouvia, Dassia, Kassiopi.",
+        gr: "Επείγουσα φροντίδα και διαγνωστικά, κατ’ οίκον επισκέψεις σε Γουβιά, Δασιά, Κασσιόπη."
       },
-      phone: "+30 2661 038291",
+      phone: "+30 26610 34580",
       coordinates: "39.6156,19.9178",
-      hours: {
-        en: "24/7 Emergency Services",
-        gr: "24/7 Υπηρεσίες Επειγόντων"
-      }
+      hours: { en: "Mon–Sun: 09:00–21:30", gr: "Δευ–Κυρ: 09:00–21:30" }
+    },
+    {
+      id: 6,
+      name: {
+        en: "Corfumedica Gouvia Clinic",
+        gr: "Corfumedica Κλινική Γουβιάς"
+      },
+      address: {
+        en: "Gouvia, Corfu (near Pandi Pharmacy)",
+        gr: "Γουβιά Κέρκυρας (δίπλα στο φαρμακείο Πάνδι)"
+      },
+      description: {
+        en: "Surgical & emergency services in Gouvia tourist area.",
+        gr: "Χειρουργικά & επείγοντα περιστατικά στην τουριστική περιοχή Γουβιά."
+      },
+      phone: "+30 26610 91303",
+      coordinates: "39.6780,19.8450",
+      hours: { en: "Mon–Sun: 09:00–21:30", gr: "Καθημερινά: 09:00–21:30" }
     }
   ],
+
   dentist: [
     {
       id: 13,
-      name: {
-        en: "Dr. Dimitris Kostas - Dental Clinic",
-        gr: "Δρ. Δημήτρης Κώστας - Οδοντιατρική Κλινική"
+      name: { 
+        en: "Corfu Dental Care - Kostis Makrygiannakis & Eleni Panaretou", 
+        gr: "Corfu Dental Care – Κώστας Μακρυγιαννάκης & Ελένη Παναρρέτου" 
       },
-      address: {
-        en: "32 Ioannou Theotoki Street, Corfu",
-        gr: "Ιωάννου Θεοτόκη 32, Κέρκυρα"
+      address: { 
+        en: "2 Samara Street, Corfu Town", 
+        gr: "Σαμαρά 2, Κέρκυρα" 
       },
       description: {
-        en: "Modern dental clinic with emergency services. English-speaking dentist available.",
-        gr: "Μοντέρνη οδοντιατρική κλινική με υπηρεσίες επειγόντων. Διαθέσιμος αγγλόφωνος οδοντίατρος."
+        en: "General & cosmetic dentistry, air polishing, root canal; appointment only.",
+        gr: "Γενική & αισθητική οδοντιατρική, air‑polishing, απονευρώσεις· μόνο με ραντεβού."
       },
-      phone: "+30 2661 047890",
-      coordinates: "39.6234,19.9123",
-      hours: {
-        en: "Mon-Fri: 9:00-18:00, Emergency: 24/7",
-        gr: "Δευ-Παρ: 9:00-18:00, Επείγοντα: 24/7"
-      }
+      phone: "+30 2661 100315",
+      coordinates: "39.6240,19.9210",
+      hours: { en: "Mon–Fri: 09:00–19:00", gr: "Δευ–Παρ: 09:00–19:00" }
     },
     {
       id: 14,
-      name: {
-        en: "Smile Dental Care",
-        gr: "Χαμόγελο Οδοντιατρική Φροντίδα"
+      name: { 
+        en: "Dr. Thymi Magdalini PhD, DDS", 
+        gr: "Δρ. Θυμή Μαγδαληνή, PhD, DDS" 
       },
-      address: {
-        en: "8 Samaras Street, Corfu",
-        gr: "Σαμαρά 8, Κέρκυρα"
-      },
-      description: {
-        en: "Tourist-friendly dental clinic. Quick appointments for dental emergencies.",
-        gr: "Φιλική προς τουρίστες οδοντιατρική κλινική. Γρήγορα ραντεβού για οδοντιατρικές επείγουσες καταστάσεις."
-      },
-      phone: "+30 2661 055432",
-      coordinates: "39.6145,19.9201",
-      hours: {
-        en: "Mon-Sat: 10:00-20:00",
-        gr: "Δευ-Σαβ: 10:00-20:00"
-      }
-    }
-  ],
-  pediatrician: [
-    {
-      id: 15,
-      name: {
-        en: "Dr. Sofia Nikolaou - Pediatrics",
-        gr: "Δρ. Σοφία Νικολάου - Παιδιατρική"
-      },
-      address: {
-        en: "22 Evgeniou Voulgareos Street, Corfu",
-        gr: "Ευγενίου Βουλγαρέως 22, Κέρκυρα"
+      address: { 
+        en: "36 Grigoriou Marasli Street, Corfu Town", 
+        gr: "Γρηγορίου Μαρασλή 36, Κέρκυρα" 
       },
       description: {
-        en: "Experienced pediatrician with multilingual staff. Child-friendly environment.",
-        gr: "Έμπειρη παιδίατρος με πολύγλωσσο προσωπικό. Φιλικό περιβάλλον για παιδιά."
+        en: "Highly-rated dentist since 2011; modern, English‑speaking, cosmetic treatments.",
+        gr: "Αξιολογημένη οδοντίατρος από το 2011· σύγχρονο, αγγλόφωνο, αισθητική θεραπεία." 
       },
-      phone: "+30 2661 056789",
-      coordinates: "39.6178,19.9089",
-      hours: {
-        en: "Mon-Fri: 8:00-16:00, Emergency: 24/7",
-        gr: "Δευ-Παρ: 8:00-16:00, Επείγοντα: 24/7"
-      }
+      phone: "+30 26610 34906",
+      coordinates: "39.6235,19.9205",
+      hours: { en: "Mon–Fri: 09:00–18:00", gr: "Δευ–Παρ: 09:00–18:00" }
     },
     {
-      id: 16,
-      name: {
-        en: "Kids Care Clinic",
-        gr: "Κλινική Φροντίδας Παιδιών"
+      id: 15,
+      name: { 
+        en: "Dr. Nikolaos Pandis – Orthodontist", 
+        gr: "Δρ. Νικόλαος Πανδής – Ορθοδοντικός" 
       },
-      address: {
-        en: "15 Palaiologou Street, Corfu",
-        gr: "Παλαιολόγου 15, Κέρκυρα"
+      address: { 
+        en: "29 Panou Zafeiropoulou Street, Corfu Town", 
+        gr: "Πάνου Ζαφειροπούλου 29, Κέρκυρα" 
       },
       description: {
-        en: "Specialized pediatric clinic. English-speaking doctors available for tourists with children.",
-        gr: "Εξειδικευμένη παιδιατρική κλινική. Αγγλόφωνοι γιατροί διαθέσιμοι για τουρίστες με παιδιά."
+        en: "Orthodontics specialist with international training (USA, Switzerland).",
+        gr: "Εξειδικευμένος ορθοδοντικός με διεθνή εκπαίδευση (ΗΠΑ, Ελβετία)."
       },
-      phone: "+30 2661 051234",
-      coordinates: "39.6267,19.9145",
-      hours: {
-        en: "Daily: 9:00-17:00",
-        gr: "Καθημερινά: 9:00-17:00"
-      }
+      phone: "+30 26610 35087",
+      coordinates: "39.6242,19.9210",
+      hours: { en: "Mon–Fri: 10:00–18:00", gr: "Δευ–Παρ: 10:00–18:00" }
     }
   ],
+
+  atm: [
+    {
+      id: 19,
+      name: { en: "National Bank ATM - Spianada", gr: "ΑΤΜ Εθνικής Τράπεζας - Σπιανάδα" },
+      address: { en: "Spianada Square, Corfu Old Town", gr: "Πλατεία Σπιανάδα, Παλιά Πόλη Κέρκυρας" },
+      description: {
+        en: "ATM near the Liston area with 24/7 access. Accepts Visa, Mastercard, and UnionPay.",
+        gr: "ΑΤΜ κοντά στη Λιστόν με 24ωρη πρόσβαση. Δέχεται Visa, Mastercard και UnionPay."
+      },
+      phone: "+30 210 4848484",
+      coordinates: "39.6244,19.9220",
+      hours: { en: "24/7", gr: "24/7" }
+    },
+    {
+      id: 20,
+      name: { en: "Eurobank ATM - Corfu Airport", gr: "ΑΤΜ Eurobank - Αεροδρόμιο Κέρκυρας" },
+      address: { en: "Corfu International Airport (Ioannis Kapodistrias)", gr: "Αεροδρόμιο Κέρκυρας (Ιωάννης Καποδίστριας)" },
+      description: {
+        en: "Convenient ATM at airport arrivals. Tourist-friendly. Supports contactless withdrawals.",
+        gr: "Εύκολα προσβάσιμο ΑΤΜ στον χώρο αφίξεων. Φιλικό προς τουρίστες. Υποστηρίζει ανέπαφες αναλήψεις."
+      },
+      phone: "+30 210 9555000",
+      coordinates: "39.6019,19.9117",
+      hours: { en: "24/7", gr: "24/7" }
+    },
+    {
+      id: 21,
+      name: { en: "Piraeus Bank ATM - Gouvia", gr: "ΑΤΜ Τράπεζας Πειραιώς - Γουβιά" },
+      address: { en: "Main Road, Gouvia Marina", gr: "Κεντρικός Δρόμος, Μαρίνα Γουβιών" },
+      description: {
+        en: "ATM located next to tourist shops in Gouvia. Supports foreign cards and balance checks.",
+        gr: "ΑΤΜ δίπλα σε τουριστικά καταστήματα στη Γουβιά. Υποστηρίζει ξένες κάρτες και έλεγχο υπολοίπου."
+      },
+      phone: "+30 210 3288000",
+      coordinates: "39.6772,19.8435",
+      hours: { en: "24/7", gr: "24/7" }
+    }
+  ],
+
+
   veterinary: [
     {
       id: 17,
-      name: {
-        en: "Corfu Veterinary Clinic",
-        gr: "Κτηνιατρική Κλινική Κέρκυρας"
-      },
-      address: {
-        en: "55 Ethnikis Antistaseos Street, Corfu",
-        gr: "Εθνικής Αντιστάσεως 55, Κέρκυρα"
-      },
+      name: { en: "Corfu Veterinary Clinic", gr: "Κτηνιατρική Κλινική Κέρκυρας" },
+      address: { en: "Ethnikis Antistaseos 55, Corfu Town", gr: "Εθνικής Αντιστάσεως 55, Κέρκυρα" },
       description: {
-        en: "Full-service veterinary clinic. Emergency care for pets. English-speaking staff.",
-        gr: "Πλήρης κτηνιατρική κλινική. Φροντίδα έκτακτης ανάγκης για κατοικίδια. Αγγλόφωνο προσωπικό."
+        en: "Full-service vet with emergency care, dental, diagnostics.",
+        gr: "Πλήρης κτηνιατρική με έκτακτα περιστατικά, οδοντιατρική, διαγνώσεις."
       },
-      phone: "+30 2661 062345",
+      phone: "+30 26610 30033",
       coordinates: "39.6089,19.9234",
-      hours: {
-        en: "Mon-Fri: 9:00-19:00, Emergency: 24/7",
-        gr: "Δευ-Παρ: 9:00-19:00, Επείγοντα: 24/7"
-      }
+      hours: { en: "Mon–Fri: 09:00–19:00; Sat: 10:00–18:00", gr: "Δευ–Παρ: 09:00–19:00; Σαβ: 10:00–18:00" }
     },
     {
       id: 18,
-      name: {
-        en: "Animal Care Dassia",
-        gr: "Φροντίδα Ζώων Δασσιά"
-      },
-      address: {
-        en: "Main Road, Dassia",
-        gr: "Κεντρικός Δρόμος, Δασσιά"
-      },
+      name: { en: "Animal Care Dassia", gr: "Φροντίδα Ζώων Δασσιά" },
+      address: { en: "Dassia, Corfu", gr: "Δασσιά, Κέρκυρα" },
       description: {
-        en: "Tourist area veterinary service. Quick assistance for traveling pets.",
-        gr: "Κτηνιατρική υπηρεσία τουριστικής περιοχής. Γρήγορη βοήθεια για κατοικίδια που ταξιδεύουν."
+        en: "Tourist-area vet service. Quick assistance for traveling pets.",
+        gr: "Κτηνιατρική υπηρεσία περιοχής τουριστών. Γρήγορη βοήθεια για κατοικίδια ταξιδιωτών."
       },
-      phone: "+30 2661 093456",
+      phone: "+30 26610 93456",
       coordinates: "39.6445,19.8678",
-      hours: {
-        en: "Daily: 10:00-18:00",
-        gr: "Καθημερινά: 10:00-18:00"
-      }
+      hours: { en: "Daily: 10:00–18:00", gr: "Καθημερινά: 10:00–18:00" }
+    },
+    {
+      id: 19,
+      name: { en: "Corfu Mobile Vet", gr: "Κινητός Κτηνίατρος Κέρκυρας" },
+      address: { en: "Island-wide mobile service", gr: "Κινητή υπηρεσία σε όλο το νησί" },
+      description: {
+        en: "Mobile vet service covering all Corfu. Emergency home visits.",
+        gr: "Κινητή κτηνιατρική σε όλο το νησί. Επείγουσες επισκέψεις κατ’ οίκον."
+      },
+      phone: "+30 6940000000",
+      coordinates: "39.6240,19.9200",
+      hours: { en: "24/7", gr: "24/7" }
     }
   ],
   roadside: [
     {
-      id: 6,
-      name: {
-        en: "Corfu Roadside Assistance",
-        gr: "Οδική Βοήθεια Κέρκυρας"
-      },
-      address: {
-        en: "24/7 Mobile Service - Island Wide",
-        gr: "24/7 Κινητή Υπηρεσία - Σε όλο το νησί"
-      },
+      id: 22,
+      name: { en: "Express Service Corfu", gr: "Express Service Κέρκυρας" },
+      address: { en: "Ethnikis Antistaseos 28, Corfu Town", gr: "Εθνικής Αντιστάσεως 28, Κέρκυρα" },
       description: {
-        en: "24/7 roadside assistance for breakdowns, flat tires, and emergencies. English service.",
-        gr: "24/7 οδική βοήθεια για βλάβες, σκασμένα λάστιχα και επείγουσες καταστάσεις. Αγγλική εξυπηρέτηση."
+        en: "24/7 roadside assistance covering the entire island. Special support for rental vehicles.",
+        gr: "Οδική βοήθεια 24/7 σε όλο το νησί. Εξειδικευμένη υποστήριξη για ενοικιαζόμενα οχήματα."
       },
-      phone: "+30 2661 099999",
-      coordinates: "39.6243,19.9217",
-      hours: {
-        en: "24/7",
-        gr: "24/7"
-      }
+      phone: "+30 2661 048888",
+      coordinates: "39.6142,19.9193",
+      hours: { en: "24/7", gr: "24/7" }
     },
     {
-      id: 7,
-      name: {
-        en: "AA Hellas Corfu",
-        gr: "AA Hellas Κέρκυρα"
-      },
-      address: {
-        en: "Mobile Service - Northern Corfu",
-        gr: "Κινητή Υπηρεσία - Βόρεια Κέρκυρα"
-      },
+      id: 23,
+      name: { en: "Interamerican Road Assistance", gr: "Interamerican Οδική Βοήθεια" },
+      address: { en: "Mobile Unit - Servicing Corfu", gr: "Κινητή Μονάδα - Κάλυψη Κέρκυρας" },
       description: {
-        en: "Professional roadside assistance specializing in tourist vehicle support.",
-        gr: "Επαγγελματική οδική βοήθεια ειδικευμένη στην υποστήριξη τουριστικών οχημάτων."
+        en: "Reliable breakdown and towing service. Multilingual support and fast response.",
+        gr: "Αξιόπιστη οδική βοήθεια και ρυμούλκηση. Πολύγλωσση υποστήριξη και γρήγορη ανταπόκριση."
       },
-      phone: "+30 2661 088888",
-      coordinates: "39.7123,19.8901",
-      hours: {
-        en: "24/7",
-        gr: "24/7"
-      }
+      phone: "+30 1158",
+      coordinates: "39.6239,19.9184",
+      hours: { en: "24/7", gr: "24/7" }
+    },
+    {
+      id: 24,
+      name: { en: "ELPA Assistance Corfu", gr: "ΕΛΠΑ Οδική Βοήθεια Κέρκυρας" },
+      address: { en: "Lefkimmi Road, Kanalia Area", gr: "Λεωφόρος Λευκίμμης, περιοχή Κανάλια" },
+      description: {
+        en: "Long-established company offering emergency roadside help. Coverage across Corfu.",
+        gr: "Καθιερωμένη εταιρεία με υπηρεσίες οδικής βοήθειας. Κάλυψη σε όλη την Κέρκυρα."
+      },
+      phone: "+30 2661 030101",
+      coordinates: "39.6015,19.9030",
+      hours: { en: "24/7", gr: "24/7" }
     }
   ],
+
   atm: [
     {
       id: 8,
@@ -404,171 +383,144 @@ export const services = {
   ],
   hospital: [
     {
-      id: 11,
-      name: {
-        en: "Corfu General Hospital",
-        gr: "Γενικό Νοσοκομείο Κέρκυρας"
-      },
-      address: {
-        en: "Kontokali, Corfu",
-        gr: "Κοντοκάλι, Κέρκυρα"
-      },
+      id: 25,
+      name: { en: "Corfu General Hospital", gr: "Γενικό Νοσοκομείο Κέρκυρας" },
+      address: { en: "Kontokali, Corfu", gr: "Κοντοκάλι, Κέρκυρα" },
       description: {
-        en: "Main public hospital with emergency department. Tourist emergency services available.",
-        gr: "Κύριο δημόσιο νοσοκομείο με τμήμα επειγόντων. Διαθέσιμες υπηρεσίες έκτακτης ανάγκης για τουρίστες."
+        en: "The island's main public hospital with full emergency, surgical, and inpatient services.",
+        gr: "Το κύριο δημόσιο νοσοκομείο του νησιού με πλήρεις υπηρεσίες επειγόντων, χειρουργείων και νοσηλείας."
       },
-      phone: "+30 2661 060000",
-      coordinates: "39.6789,19.8901",
-      hours: {
-        en: "24/7 Emergency",
-        gr: "24/7 Επείγοντα"
-      }
+      phone: "+30 2661 360500",
+      coordinates: "39.6507,19.8503",
+      hours: { en: "24/7 Emergency", gr: "24/7 Επείγοντα" }
+    },
+    {
+      id: 26,
+      name: { en: "Mediterraneo Medical Center", gr: "Ιατρικό Κέντρο Mediterraneo" },
+      address: { en: "Ethnikis Lefkimmi Road, Alepou", gr: "Λεωφόρος Εθνικής Λευκίμμης, Αλεπού" },
+      description: {
+        en: "Private clinic offering diagnostics, imaging (MRI/CT), and urgent outpatient services.",
+        gr: "Ιδιωτική κλινική με διαγνωστικά, απεικονιστικά (μαγνητική/αξονική) και υπηρεσίες επειγόντων περιστατικών."
+      },
+      phone: "+30 2661 048789",
+      coordinates: "39.6023,19.9112",
+      hours: { en: "Mon-Sat: 8:00-20:00", gr: "Δευ-Σαβ: 8:00-20:00" }
+    },
+    {
+      id: 27,
+      name: { en: "Iaso Corfu Private Clinic", gr: "Ιδιωτική Κλινική ΙΑΣΩ Κέρκυρας" },
+      address: { en: "Kanoni area, Ioannou Theotoki Street", gr: "Περιοχή Κανόνι, Ιωάννου Θεοτόκη" },
+      description: {
+        en: "Modern private hospital offering specialist consultations and short hospital stays.",
+        gr: "Σύγχρονο ιδιωτικό νοσοκομείο με ιατρικές ειδικότητες και δυνατότητα βραχείας νοσηλείας."
+      },
+      phone: "+30 2661 052222",
+      coordinates: "39.6054,19.9133",
+      hours: { en: "Mon-Fri: 9:00-17:00, Emergency: On Call", gr: "Δευ-Παρ: 9:00-17:00, Επείγοντα: Κατόπιν κλήσης" }
     }
   ],
+
   fire: [
     {
-      id: 19,
-      name: {
-        en: "Corfu Fire Department",
-        gr: "Πυροσβεστική Υπηρεσία Κέρκυρας"
-      },
-      address: {
-        en: "25 Dikigorou Street, Corfu",
-        gr: "Δικηγόρου 25, Κέρκυρα"
-      },
+      id: 28,
+      name: { en: "Corfu Fire Department Headquarters", gr: "Κεντρική Πυροσβεστική Υπηρεσία Κέρκυρας" },
+      address: { en: "25 Dimokratias Avenue, Corfu", gr: "Λεωφόρος Δημοκρατίας 25, Κέρκυρα" },
       description: {
-        en: "Main fire station with emergency response. 24/7 firefighting and rescue services.",
-        gr: "Κύριος πυροσβεστικός σταθμός με επείγουσα ανταπόκριση. 24/7 υπηρεσίες πυρόσβεσης και διάσωσης."
+        en: "Main fire station providing 24/7 emergency response across Corfu town and surroundings.",
+        gr: "Κύριος πυροσβεστικός σταθμός με 24/7 επείγουσα ανταπόκριση στην πόλη της Κέρκυρας και γύρω περιοχές."
       },
-      phone: "+30 199",
-      coordinates: "39.6198,19.9167",
-      hours: {
-        en: "24/7",
-        gr: "24/7"
-      }
+      phone: "+30 2661 031199",
+      coordinates: "39.6198,19.9194",
+      hours: { en: "24/7", gr: "24/7" }
     },
     {
-      id: 20,
-      name: {
-        en: "Corfu North Fire Station",
-        gr: "Πυροσβεστικός Σταθμός Βόρειας Κέρκυρας"
-      },
-      address: {
-        en: "Acharavi, North Corfu",
-        gr: "Αχαράβη, Βόρεια Κέρκυρα"
-      },
+      id: 29,
+      name: { en: "North Corfu Fire Station – Acharavi", gr: "Πυροσβεστικός Σταθμός Βόρειας Κέρκυρας – Αχαράβη" },
+      address: { en: "Acharavi Main Road, North Corfu", gr: "Κεντρική Οδός, Αχαράβη, Βόρεια Κέρκυρα" },
       description: {
-        en: "Northern region fire station. Forest fire prevention and beach rescue services.",
-        gr: "Πυροσβεστικός σταθμός βόρειας περιοχής. Πρόληψη δασικών πυρκαγιών και υπηρεσίες διάσωσης παραλίας."
+        en: "Covers the northern part of Corfu including forest fire prevention and coastal response.",
+        gr: "Εξυπηρετεί τη βόρεια Κέρκυρα με έμφαση στην πρόληψη δασικών πυρκαγιών και παροχή βοήθειας σε παραλίες."
       },
-      phone: "+30 199",
-      coordinates: "39.7234,19.8123",
-      hours: {
-        en: "24/7",
-        gr: "24/7"
-      }
+      phone: "+30 2663 063210",
+      coordinates: "39.7956,19.8251",
+      hours: { en: "24/7", gr: "24/7" }
+    },
+    {
+      id: 30,
+      name: { en: "South Corfu Fire Station – Lefkimmi", gr: "Πυροσβεστικός Σταθμός Νότιας Κέρκυρας – Λευκίμμη" },
+      address: { en: "Lefkimmi Main Street, South Corfu", gr: "Κεντρική Οδός, Λευκίμμη, Νότια Κέρκυρα" },
+      description: {
+        en: "Regional station focused on the southern areas of the island and rural fire outbreaks.",
+        gr: "Περιφερειακός σταθμός για τη νότια πλευρά του νησιού και τις αγροτικές περιοχές."
+      },
+      phone: "+30 2662 062311",
+      coordinates: "39.4168,20.0172",
+      hours: { en: "24/7", gr: "24/7" }
     }
   ],
+
   embassy: [
     {
-      id: 21,
-      name: {
-        en: "British Vice Consulate",
-        gr: "Βρετανικό Υποπροξενείο"
-      },
-      address: {
-        en: "2 Menekratous Street, Corfu",
-        gr: "Μενεκράτους 2, Κέρκυρα"
-      },
+      id: 31,
+      name: { en: "British Vice Consulate Corfu", gr: "Βρετανικό Υποπροξενείο Κέρκυρας" },
+      address: { en: "2 Menekratous St, Corfu Town", gr: "Οδός Μενεκράτους 2, Κέρκυρα" },
       description: {
-        en: "British consular services for UK citizens. Emergency assistance and document services.",
-        gr: "Βρετανικές προξενικές υπηρεσίες για πολίτες του Ηνωμένου Βασιλείου. Βοήθεια έκτακτης ανάγκης και υπηρεσίες εγγράφων."
+        en: "Offers assistance to British nationals including emergency documents, legal guidance, and travel issues.",
+        gr: "Προσφέρει βοήθεια σε Βρετανούς υπηκόους, όπως επείγοντα έγγραφα, νομική καθοδήγηση και θέματα ταξιδιού."
       },
       phone: "+30 2661 030055",
-      coordinates: "39.6234,19.9189",
-      hours: {
-        en: "Mon-Fri: 9:00-16:00",
-        gr: "Δευ-Παρ: 9:00-16:00"
-      }
+      coordinates: "39.6235,19.9188",
+      hours: { en: "Mon–Fri: 9:00–16:00", gr: "Δευ–Παρ: 9:00–16:00" }
     },
     {
-      id: 22,
-      name: {
-        en: "German Honorary Consulate",
-        gr: "Γερμανικό Επίτιμο Προξενείο"
-      },
-      address: {
-        en: "12 Guilford Street, Corfu",
-        gr: "Γκίλφορντ 12, Κέρκυρα"
-      },
+      id: 33,
+      name: { en: "Italian Honorary Consulate Corfu", gr: "Ιταλικό Επίτιμο Προξενείο Κέρκυρας" },
+      address: { en: "31 Kapodistriou Street, Corfu", gr: "Οδός Καποδιστρίου 31, Κέρκυρα" },
       description: {
-        en: "German consular services. Emergency assistance for German citizens visiting Corfu.",
-        gr: "Γερμανικές προξενικές υπηρεσίες. Βοήθεια έκτακτης ανάγκης για Γερμανούς πολίτες που επισκέπτονται την Κέρκυρα."
-      },
-      phone: "+30 2661 031571",
-      coordinates: "39.6245,19.9201",
-      hours: {
-        en: "Mon-Wed-Fri: 10:00-13:00",
-        gr: "Δευ-Τετ-Παρ: 10:00-13:00"
-      }
-    },
-    {
-      id: 23,
-      name: {
-        en: "Italian Honorary Consulate",
-        gr: "Ιταλικό Επίτιμο Προξενείο"
-      },
-      address: {
-        en: "31 Kapodistrias Street, Corfu",
-        gr: "Καποδιστρίου 31, Κέρκυρα"
-      },
-      description: {
-        en: "Italian consular services. Document assistance and emergency support for Italian tourists.",
-        gr: "Ιταλικές προξενικές υπηρεσίες. Βοήθεια εγγράφων και υποστήριξη έκτακτης ανάγκης για Ιταλούς τουρίστες."
+        en: "Provides emergency assistance, passport support, and translation services for Italian visitors.",
+        gr: "Παροχή επείγουσας βοήθειας, υποστήριξη διαβατηρίων και μεταφράσεις για Ιταλούς επισκέπτες."
       },
       phone: "+30 2661 038351",
-      coordinates: "39.6198,19.9156",
-      hours: {
-        en: "Tue-Thu: 9:00-12:00",
-        gr: "Τρι-Πεμ: 9:00-12:00"
-      }
+      coordinates: "39.6197,19.9157",
+      hours: { en: "Tue–Thu: 9:00–12:00", gr: "Τρί–Πέμ: 9:00–12:00" }
     }
   ],
+
   boat: [
     {
-      id: 24,
+      id: 34,
       name: {
         en: "Corfu Port Authority",
         gr: "Λιμεναρχείο Κέρκυρας"
       },
       address: {
-        en: "Port of Corfu, New Port",
-        gr: "Λιμάνι Κέρκυρας, Νέο Λιμάνι"
+        en: "New Port, Corfu Town",
+        gr: "Νέο Λιμάνι, Κέρκυρα"
       },
       description: {
-        en: "Marine emergency services and coast guard. 24/7 sea rescue and assistance.",
-        gr: "Υπηρεσίες θαλάσσιας έκτακτης ανάγκης και λιμενικό σώμα. 24/7 διάσωση και βοήθεια στη θάλασσα."
+        en: "Provides 24/7 maritime emergency response and coast guard coordination across Corfu's coastline.",
+        gr: "Παρέχει 24/7 θαλάσσια βοήθεια και συντονισμό με το λιμενικό σώμα σε όλη την ακτογραμμή της Κέρκυρας."
       },
-      phone: "+30 108",
-      coordinates: "39.6198,19.9234",
+      phone: "+30 2661 038150",
+      coordinates: "39.6289,19.9032",
       hours: {
         en: "24/7",
         gr: "24/7"
       }
     },
     {
-      id: 25,
+      id: 35,
       name: {
-        en: "Sea Rescue Corfu",
-        gr: "Θαλάσσια Διάσωση Κέρκυρας"
+        en: "Gouvia Marina Sea Rescue",
+        gr: "Θαλάσσια Διάσωση Μαρίνας Γουβιάς"
       },
       address: {
-        en: "Gouvia Marina, Corfu",
-        gr: "Μαρίνα Γουβιάς, Κέρκυρα"
+        en: "Gouvia Marina, Kontokali",
+        gr: "Μαρίνα Γουβιάς, Κοντοκάλι"
       },
       description: {
-        en: "Professional sea rescue service. Emergency assistance for boats and water activities.",
-        gr: "Επαγγελματική υπηρεσία θαλάσσιας διάσωσης. Βοήθεια έκτακτης ανάγκης για σκάφη και υδάτινες δραστηριότητες."
+        en: "Rescue services for boats in distress, engine failure, or man-overboard situations around Central and North Corfu.",
+        gr: "Υπηρεσίες διάσωσης για βλάβες σκαφών, πτώσεις στη θάλασσα και επείγοντα περιστατικά στο κεντρικό και βόρειο νησί."
       },
       phone: "+30 2661 091000",
       coordinates: "39.6789,19.8456",
@@ -576,31 +528,95 @@ export const services = {
         en: "24/7",
         gr: "24/7"
       }
-    }
-  ],
-  police: [
+    },
     {
-      id: 12,
+      id: 36,
       name: {
-        en: "Corfu Police Station",
-        gr: "Αστυνομικό Τμήμα Κέρκυρας"
+        en: "Paleokastritsa Lifeguard & Marine Help",
+        gr: "Ναυαγοσωστική & Θαλάσσια Βοήθεια Παλαιοκαστρίτσας"
       },
       address: {
-        en: "Alexandras Avenue, Corfu",
-        gr: "Λεωφόρος Αλεξάνδρας, Κέρκυρα"
+        en: "Main Beach, Paleokastritsa",
+        gr: "Κεντρική Παραλία, Παλαιοκαστρίτσα"
       },
       description: {
-        en: "Main police station with tourist police unit. English-speaking officers available.",
-        gr: "Κύριο αστυνομικό τμήμα με μονάδα τουριστικής αστυνομίας. Διαθέσιμοι αγγλόφωνοι αστυνομικοί."
+        en: "Lifeguard station and marine rescue center for western Corfu. Supports snorkeling, diving, and boat tour emergencies.",
+        gr: "Ναυαγοσωστικός σταθμός και θαλάσσια βοήθεια για την δυτική Κέρκυρα. Υποστήριξη για καταδύσεις, snorkeling και τουριστικά σκάφη."
       },
-      phone: "+30 2661 039503",
-      coordinates: "39.6198,19.9156",
+      phone: "+30 2663 041234",
+      coordinates: "39.6711,19.7072",
       hours: {
-        en: "24/7",
-        gr: "24/7"
+        en: "Daily: 8:00–20:00",
+        gr: "Καθημερινά: 8:00–20:00"
       }
     }
-  ]
+  ],
+
+police: [
+  {
+    id: 37,
+    name: {
+      en: "Corfu Police Headquarters",
+      gr: "Γενική Αστυνομική Διεύθυνση Κέρκυρας"
+    },
+    address: {
+      en: "7 Iakovou Polyla Street, Corfu",
+      gr: "Ιάκωβου Πολυλά 7, Κέρκυρα"
+    },
+    description: {
+      en: "Main police station handling crime reports, emergency response, and public safety services. English-speaking staff available.",
+      gr: "Κύρια αστυνομική διεύθυνση που χειρίζεται αναφορές εγκλημάτων, επείγουσες καταστάσεις και δημόσια ασφάλεια. Διαθέσιμο αγγλόφωνο προσωπικό."
+    },
+    phone: "+30 2661 039503",
+    coordinates: "39.6248,19.9213",
+    hours: {
+      en: "24/7",
+      gr: "24/7"
+    }
+  },
+  {
+    id: 38,
+    name: {
+      en: "Tourist Police Corfu",
+      gr: "Τουριστική Αστυνομία Κέρκυρας"
+    },
+    address: {
+      en: "San Rocco Square, Corfu Town",
+      gr: "Πλατεία Σαν Ρόκκο, Κέρκυρα"
+    },
+    description: {
+      en: "Special unit assisting tourists with theft reports, lost documents, and multilingual support.",
+      gr: "Ειδική μονάδα που βοηθά τουρίστες με κλοπές, απώλειες εγγράφων και πολύγλωσση υποστήριξη."
+    },
+    phone: "+30 2661 039530",
+    coordinates: "39.6231,19.9185",
+    hours: {
+      en: "Mon–Sun: 08:00–22:00",
+      gr: "Δευ–Κυρ: 08:00–22:00"
+    }
+  },
+  {
+    id: 39,
+    name: {
+      en: "Police Station North Corfu (Acharavi)",
+      gr: "Αστυνομικό Τμήμα Βόρειας Κέρκυρας (Αχαράβη)"
+    },
+    address: {
+      en: "Acharavi Main Road, North Corfu",
+      gr: "Κεντρική Οδός Αχαράβης, Βόρεια Κέρκυρα"
+    },
+    description: {
+      en: "Covers northern Corfu region with 24/7 emergency patrols and tourist support.",
+      gr: "Εξυπηρετεί τη βόρεια Κέρκυρα με περιπολίες 24/7 και υποστήριξη τουριστών."
+    },
+    phone: "+30 2663 063222",
+    coordinates: "39.7934,19.8132",
+    hours: {
+      en: "24/7",
+      gr: "24/7"
+    }
+  }
+]
 };
 
 export const translations = {
