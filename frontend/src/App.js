@@ -51,6 +51,9 @@ function App() {
     }
   }, []);
 
+  console.log("force deploy");
+
+
   return (
     <div className="min-h-screen bg-white" style={{ scrollBehavior: 'smooth' }}>
       {/* Main Header */}
