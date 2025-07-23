@@ -20,7 +20,7 @@ const Footer = ({ language }) => {
               <img 
                 src="/logo.svg" 
                 alt="Corfu Line Logo" 
-                className="h-8 w-auto mr-3 filter brightness-0 invert"
+                className="h-8 w-auto mr-3"
               />
               <span className="text-2xl font-bold">Corfu Line</span>
             </div>
