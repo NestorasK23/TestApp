@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Clock, CheckCircle, UserCheck, Shield, Zap, Globe } from 'lucide-react';
 
-const WhyCorfuLineSection = ({ language }) => {
+const WhyHelpHereSection = ({ language }) => {
   const features = [
     {
       icon: Clock,
@@ -68,7 +68,7 @@ const WhyCorfuLineSection = ({ language }) => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            {language === 'en' ? 'Why Choose CorfuLine?' : 'Γιατί να Επιλέξετε το CorfuLine;'}
+            {language === 'en' ? 'Why Choose HelpHere?' : 'Γιατί να Επιλέξετε το HelpHere;'}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {language === 'en' 
@@ -127,4 +127,4 @@ const WhyCorfuLineSection = ({ language }) => {
   );
 };
 
-export default WhyCorfuLineSection;
+export default WhyHelpHereSection;

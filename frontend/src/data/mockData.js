@@ -1,4 +1,4 @@
-// Mock data for CorfuLine services in Corfu
+// Mock data for HelpHere services in Corfu
 
 export const serviceCategories = {
   pharmacy: {
@@ -658,7 +658,7 @@ police: [
 
 export const translations = {
   en: {
-    appTitle: "CorfuLine",
+    appTitle: "HelpHere",
     appSubtitle: "Find emergency services in Corfu",
     selectCategory: "Select a service category",
     backToCategories: "← Back to Categories",
@@ -674,7 +674,7 @@ export const translations = {
     allServices: "All Services"
   },
   gr: {
-    appTitle: "CorfuLine",
+    appTitle: "HelpHere",
     appSubtitle: "Βρείτε υπηρεσίες έκτακτης ανάγκης στην Κέρκυρα",
     selectCategory: "Επιλέξτε κατηγορία υπηρεσίας",
     backToCategories: "← Πίσω στις Κατηγορίες",

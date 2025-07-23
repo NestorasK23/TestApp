@@ -38,8 +38,8 @@ const TestimonialsSection = ({ language }) => {
         gr: 'Παλαιοκαστρίτσα'
       },
       text: {
-        en: 'Had a minor accident near Paleokastritsa. CorfuLine helped me find the nearest clinic instantly. Great service!',
-        gr: 'Είχα ένα μικρό ατύχημα κοντά στην Παλαιοκαστρίτσα. Το CorfuLine με βοήθησε να βρω την πλησιέστερη κλινική αμέσως. Εξαιρετική υπηρεσία!'
+        en: 'Had a minor accident near Paleokastritsa. HelpHere helped me find the nearest clinic instantly. Great service!',
+        gr: 'Είχα ένα μικρό ατύχημα κοντά στην Παλαιοκαστρίτσα. Το HelpHere με βοήθησε να βρω την πλησιέστερη κλινική αμέσως. Εξαιρετική υπηρεσία!'
       },
       rating: 5,
       category: 'medical'

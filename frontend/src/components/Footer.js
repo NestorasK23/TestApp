@@ -19,10 +19,10 @@ const Footer = ({ language }) => {
             <div className="flex items-center mb-6">
               <img 
                 src="/logo.svg" 
-                alt="CorfuLine Logo" 
+                alt="HelpHere Logo" 
                 className="h-8 w-auto mr-3 filter brightness-0 invert"
               />
-              <span className="text-2xl font-bold">CorfuLine</span>
+              <span className="text-2xl font-bold">HelpHere</span>
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
               {language === 'en'
@@ -63,7 +63,7 @@ const Footer = ({ language }) => {
               <div className="text-gray-300 text-sm">
                 <div className="flex items-center mb-2">
                   <Mail className="h-4 w-4 mr-2" />
-                  <span>info@CorfuLine.gr</span>
+                  <span>info@helphere.gr</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
@@ -93,7 +93,7 @@ const Footer = ({ language }) => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} CorfuLine. {language === 'en' ? 'All rights reserved. Made for tourists visiting Corfu.' : 'Όλα τα δικαιώματα διατηρούνται. Φτιαγμένο για τουρίστες που επισκέπτονται την Κέρκυρα.'}
+              © {currentYear} HelpHere. {language === 'en' ? 'All rights reserved. Made for tourists visiting Corfu.' : 'Όλα τα δικαιώματα διατηρούνται. Φτιαγμένο για τουρίστες που επισκέπτονται την Κέρκυρα.'}
             </div>
             <Button
               onClick={scrollToTop}

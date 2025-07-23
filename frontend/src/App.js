@@ -6,7 +6,7 @@ import ServiceList from './components/ServiceList';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import HowItWorksSection from './components/HowItWorksSection';
-import WhyCorfuLineSection from './components/WhyCorfuLineSection';
+import WhyHelpHereSection from './components/WhyHelpHereSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import Footer from './components/Footer';
 import { Button } from './components/ui/button';
@@ -109,8 +109,8 @@ function App() {
           {/* How It Works Section */}
           <HowItWorksSection language={language} />
 
-          {/* Why CorfuLine Section */}
-          <WhyCorfuLineSection language={language} />
+          {/* Why HelpHere Section */}
+          <WhyHelpHereSection language={language} />
 
           {/* Testimonials Section */}
           <TestimonialsSection language={language} />
