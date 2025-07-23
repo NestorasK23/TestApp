@@ -13,7 +13,7 @@ const Header = ({ language, onLanguageChange }) => {
     },
     { 
       id: 'why', 
-      label: language === 'en' ? 'Why HelpHere' : 'Γιατί HelpHere' 
+      label: language === 'en' ? 'Why CorfuLine' : 'Γιατί CorfuLine' 
     },
     { 
       id: 'reviews', 
@@ -41,7 +41,7 @@ const Header = ({ language, onLanguageChange }) => {
           <div className="flex items-center space-x-3">
             <img 
               src="/logo.svg" 
-              alt="HelpHere Logo" 
+              alt="CorfuLine Logo" 
               className="h-12 lg:h-14 w-auto"
             />
           </div>
