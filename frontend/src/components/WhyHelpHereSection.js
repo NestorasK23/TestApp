@@ -68,7 +68,7 @@ const WhyHelpHereSection = ({ language }) => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            {language === 'en' ? 'Why Choose HelpHere?' : 'Γιατί να Επιλέξετε το HelpHere;'}
+            {language === 'en' ? 'Why Choose Corfu Line?' : 'Γιατί να Επιλέξετε το Corfu Line;'}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {language === 'en' 
